@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "YunEarMcSdkBP",
+    "name": "behavior_pack",
+    "uuid": "8da0d00b-89d8-41a8-8bac-739286c82b51",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "YunEarMcSdkBP",
+      "type": "data",
+      "uuid": "d3886900-92ec-4b45-9276-673df97b3385",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

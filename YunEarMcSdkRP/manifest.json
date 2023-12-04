@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "YunEarMcSdkRP",
+    "name": "resource_pack",
+    "uuid": "557bb337-0256-4ce1-bfd1-588ddea185f4",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "YunEarMcSdkRP",
+      "type": "resources",
+      "uuid": "5438e810-2d93-48b8-a2ec-9a1bcd3059b6",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}
