@@ -8,7 +8,5 @@ from YunEarMcSdk.sdk.Sdk import YunEarMcSdk
 class YunEarMcSdkTest(object):
 
     @AddEntityServerEvent
-    def AddEntityServerEvent(self, event):
-        # type: (AddEntityServerEvent) -> None
-        pos = event.entity.GetPos()
-        event.entity.SetPos((pos[0], pos[1] + 5, pos[2]))
+    def AddEntityServerEvent(self, args):
+        print args

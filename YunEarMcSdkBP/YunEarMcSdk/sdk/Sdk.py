@@ -34,7 +34,7 @@ class YunEarMcSdk(object):
                 for attr in self.modCls.__dict__:
                     event = self.modCls.__dict__[attr]
                     if isinstance(event, ServerEvent):
-                        event.BindSdk(self)
+                        event.BindMod(self.mod)
                         self.server.ListenForEvent(
                             serverApi.GetEngineNamespace(),
                             serverApi.GetEngineSystemName(),
@@ -50,7 +50,7 @@ class YunEarMcSdk(object):
             for attr in self.modCls.__dict__:
                 event = self.modCls.__dict__[attr]
                 if isinstance(event, ClientEvent):
-                    event.BindSdk(self)
+                    event.BindMod(self.mod)
                     self.client.ListenForEvent(
                         clientApi.GetEngineNamespace(),
                         clientApi.GetEngineSystemName(),

@@ -5,14 +5,10 @@ class Event(object):
 
     def __init__(self, callback):
         self.callback = callback
-        self.sdk = None
+        self.mod = None
 
-    def CreateFromArgs(self, args):
-        pass
-
-    def BindSdk(self, sdk):
-        self.sdk = sdk
+    def BindMod(self, mod):
+        self.mod = mod
 
     def __call__(self, args):
-        self.CreateFromArgs(args)
-        self.callback(self.sdk.mod, self)
+        self.callback(self.mod, args)
