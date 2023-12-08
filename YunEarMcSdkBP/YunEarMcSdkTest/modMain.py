@@ -11,9 +11,9 @@ class YunEarMcSdkTest(object):
     @AddEntityServerEvent
     def AddEntityServerEventTest(self, event):
         # type: (AddEntityServerEvent) -> None
-        print event.entity
+        print event.entity.GetEntityDefinitions()
 
     @AddEntityClientEvent
     def AddEntityClientEventTest(self, event):
         # type: (AddEntityClientEvent) -> None
-        print event.entity
+        print event.entity.GetEntityDefinitions()

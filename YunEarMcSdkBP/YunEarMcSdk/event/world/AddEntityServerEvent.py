@@ -11,4 +11,4 @@ class AddEntityServerEvent(ServerEvent):
         self.entity = None
 
     def CreateFromArgs(self, args):
-        self.entity = Entity(args.get("id"))
+        self.entity = Entity(self, args.get("id"))
