@@ -9,9 +9,11 @@ from YunEarMcSdk.sdk.Sdk import YunEarMcSdk
 class YunEarMcSdkTest(object):
 
     @AddEntityServerEvent
-    def AddEntityServerEvent(self, args):
-        print self, args
+    def AddEntityServerEventTest(self, event):
+        # type: (AddEntityServerEvent) -> None
+        print event.entity
 
     @AddEntityClientEvent
-    def AddEntityClientEvent(self, args):
-        print self, args
+    def AddEntityClientEventTest(self, event):
+        # type: (AddEntityClientEvent) -> None
+        print event.entity
