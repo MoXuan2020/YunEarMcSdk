@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from YunEarMcSdk.event.world.AddEntityClientEvent import AddEntityClientEvent
 from YunEarMcSdk.event.world.AddEntityServerEvent import AddEntityServerEvent
 from YunEarMcSdk.sdk.Sdk import YunEarMcSdk
 
@@ -11,9 +10,5 @@ class YunEarMcSdkTest(object):
     @AddEntityServerEvent
     def AddEntityServerEvent(self, event):
         # type: (AddEntityServerEvent) -> None
-        print event.entity.isEntityOnGround()
-
-    @AddEntityClientEvent
-    def AddEntityClientEvent(self, event):
-        # type: (AddEntityClientEvent) -> None
-        print event.entity.isEntityOnGround()
+        pos = event.entity.GetPos()
+        event.entity.SetPos((pos[0], pos[1] + 5, pos[2]))
