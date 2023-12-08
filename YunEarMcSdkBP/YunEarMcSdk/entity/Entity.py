@@ -13,14 +13,14 @@ class Entity(object):
         self.event = event
         self.id = id
 
-    def GetApi(self):
+    def GetSystemApi(self):
         if isinstance(self.event, ServerEvent):
             return serverApi
         if isinstance(self.event, ClientEvent):
             return clientApi
 
     def GetEngineCompFactory(self):
-        return self.GetApi().GetEngineCompFactory()
+        return self.GetSystemApi().GetEngineCompFactory()
 
     def CreateEngineType(self):
         return self.GetEngineCompFactory().CreateEngineType(self.id)
@@ -74,7 +74,7 @@ class Entity(object):
         return self.GetEngineCompFactory().CreateBreath(self.id)
 
     def GetLevelId(self):
-        return self.GetApi().GetLevelId()
+        return self.GetSystemApi().GetLevelId()
 
     def CreateGame(self):
         return self.GetEngineCompFactory().CreateGame(self.GetLevelId())
