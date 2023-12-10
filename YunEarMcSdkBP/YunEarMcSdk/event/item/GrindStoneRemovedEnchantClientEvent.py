@@ -7,15 +7,15 @@ class GrindStoneRemovedEnchantClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(GrindStoneRemovedEnchantClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.oldItemDict = None
-        self.additionalItemDict = None
-        self.newItemDict = None
-        self.exp = None
+        self.playerId_ = None
+        self.oldItemDict_ = None
+        self.additionalItemDict_ = None
+        self.newItemDict_ = None
+        self.exp_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.oldItemDict = args.get("oldItemDict")
-        self.additionalItemDict = args.get("additionalItemDict")
-        self.newItemDict = args.get("newItemDict")
-        self.exp = args.get("exp")
+        self.playerId_ = args.get("playerId")
+        self.oldItemDict_ = args.get("oldItemDict")
+        self.additionalItemDict_ = args.get("additionalItemDict")
+        self.newItemDict_ = args.get("newItemDict")
+        self.exp_ = args.get("exp")

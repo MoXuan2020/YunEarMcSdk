@@ -7,11 +7,11 @@ class StartRidingServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(StartRidingServerEvent, self).__init__(callback)
-        self.cancel = None
-        self.actorId = None
-        self.victimId = None
+        self.cancel_ = None
+        self.actorId_ = None
+        self.victimId_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel = args.get("cancel")
-        self.actorId = args.get("actorId")
-        self.victimId = args.get("victimId")
+        self.cancel_ = args.get("cancel")
+        self.actorId_ = args.get("actorId")
+        self.victimId_ = args.get("victimId")

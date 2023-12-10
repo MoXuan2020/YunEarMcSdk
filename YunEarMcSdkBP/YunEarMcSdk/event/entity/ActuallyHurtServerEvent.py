@@ -7,17 +7,17 @@ class ActuallyHurtServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ActuallyHurtServerEvent, self).__init__(callback)
-        self.srcId = None
-        self.projectileId = None
-        self.entityId = None
-        self.damage = None
-        self.damage_f = None
-        self.cause = None
+        self.srcId_ = None
+        self.projectileId_ = None
+        self.entityId_ = None
+        self.damage_ = None
+        self.damage_f_ = None
+        self.cause_ = None
 
     def CreateFromArgs(self, args):
-        self.srcId = args.get("srcId")
-        self.projectileId = args.get("projectileId")
-        self.entityId = args.get("entityId")
-        self.damage = args.get("damage")
-        self.damage_f = args.get("damage_f")
-        self.cause = args.get("cause")
+        self.srcId_ = args.get("srcId")
+        self.projectileId_ = args.get("projectileId")
+        self.entityId_ = args.get("entityId")
+        self.damage_ = args.get("damage")
+        self.damage_f_ = args.get("damage_f")
+        self.cause_ = args.get("cause")

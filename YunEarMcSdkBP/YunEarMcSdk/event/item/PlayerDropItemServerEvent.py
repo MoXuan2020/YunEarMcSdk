@@ -7,9 +7,9 @@ class PlayerDropItemServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerDropItemServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.itemEntityId = None
+        self.playerId_ = None
+        self.itemEntityId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.itemEntityId = args.get("itemEntityId")
+        self.playerId_ = args.get("playerId")
+        self.itemEntityId_ = args.get("itemEntityId")

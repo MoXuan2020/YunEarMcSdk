@@ -7,11 +7,11 @@ class OnMouseMiddleDownClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnMouseMiddleDownClientEvent, self).__init__(callback)
-        self.isDown = None
-        self.mousePositionX = None
-        self.mousePositionY = None
+        self.isDown_ = None
+        self.mousePositionX_ = None
+        self.mousePositionY_ = None
 
     def CreateFromArgs(self, args):
-        self.isDown = args.get("isDown")
-        self.mousePositionX = args.get("mousePositionX")
-        self.mousePositionY = args.get("mousePositionY")
+        self.isDown_ = args.get("isDown")
+        self.mousePositionX_ = args.get("mousePositionX")
+        self.mousePositionY_ = args.get("mousePositionY")

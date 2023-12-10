@@ -7,19 +7,19 @@ class BlockStrengthChangedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(BlockStrengthChangedServerEvent, self).__init__(callback)
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.blockName = None
-        self.auxValue = None
-        self.newStrength = None
-        self.dimensionId = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.blockName_ = None
+        self.auxValue_ = None
+        self.newStrength_ = None
+        self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.blockName = args.get("blockName")
-        self.auxValue = args.get("auxValue")
-        self.newStrength = args.get("newStrength")
-        self.dimensionId = args.get("dimensionId")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.blockName_ = args.get("blockName")
+        self.auxValue_ = args.get("auxValue")
+        self.newStrength_ = args.get("newStrength")
+        self.dimensionId_ = args.get("dimensionId")

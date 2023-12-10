@@ -7,9 +7,9 @@ class ClientPlayerInventoryOpenEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientPlayerInventoryOpenEvent, self).__init__(callback)
-        self.isCreative = None
-        self.cancel = None
+        self.isCreative_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.isCreative = args.get("isCreative")
-        self.cancel = args.get("cancel")
+        self.isCreative_ = args.get("isCreative")
+        self.cancel_ = args.get("cancel")

@@ -7,15 +7,15 @@ class AnvilCreateResultItemAfterClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(AnvilCreateResultItemAfterClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.itemShowName = None
-        self.itemDict = None
-        self.oldItemDict = None
-        self.materialItemDict = None
+        self.playerId_ = None
+        self.itemShowName_ = None
+        self.itemDict_ = None
+        self.oldItemDict_ = None
+        self.materialItemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.itemShowName = args.get("itemShowName")
-        self.itemDict = args.get("itemDict")
-        self.oldItemDict = args.get("oldItemDict")
-        self.materialItemDict = args.get("materialItemDict")
+        self.playerId_ = args.get("playerId")
+        self.itemShowName_ = args.get("itemShowName")
+        self.itemDict_ = args.get("itemDict")
+        self.oldItemDict_ = args.get("oldItemDict")
+        self.materialItemDict_ = args.get("materialItemDict")

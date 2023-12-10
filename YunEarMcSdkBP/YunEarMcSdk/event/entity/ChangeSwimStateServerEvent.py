@@ -7,11 +7,11 @@ class ChangeSwimStateServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ChangeSwimStateServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.formState = None
-        self.toState = None
+        self.entityId_ = None
+        self.formState_ = None
+        self.toState_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.formState = args.get("formState")
-        self.toState = args.get("toState")
+        self.entityId_ = args.get("entityId")
+        self.formState_ = args.get("formState")
+        self.toState_ = args.get("toState")

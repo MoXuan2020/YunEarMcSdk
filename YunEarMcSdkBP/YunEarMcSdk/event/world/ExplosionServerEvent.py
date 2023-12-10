@@ -7,15 +7,15 @@ class ExplosionServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ExplosionServerEvent, self).__init__(callback)
-        self.blocks = None
-        self.victims = None
-        self.sourceId = None
-        self.explodePos = None
-        self.dimensionId = None
+        self.blocks_ = None
+        self.victims_ = None
+        self.sourceId_ = None
+        self.explodePos_ = None
+        self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.blocks = args.get("blocks")
-        self.victims = args.get("victims")
-        self.sourceId = args.get("sourceId")
-        self.explodePos = args.get("explodePos")
-        self.dimensionId = args.get("dimensionId")
+        self.blocks_ = args.get("blocks")
+        self.victims_ = args.get("victims")
+        self.sourceId_ = args.get("sourceId")
+        self.explodePos_ = args.get("explodePos")
+        self.dimensionId_ = args.get("dimensionId")

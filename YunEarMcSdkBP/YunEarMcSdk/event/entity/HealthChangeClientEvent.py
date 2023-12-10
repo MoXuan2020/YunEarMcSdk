@@ -7,11 +7,11 @@ class HealthChangeClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(HealthChangeClientEvent, self).__init__(callback)
-        self.entityId = None
-        self._from = None
-        self.to = None
+        self.entityId_ = None
+        self.from_ = None
+        self.to_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self._from = args.get("from")
-        self.to = args.get("to")
+        self.entityId_ = args.get("entityId")
+        self.from_ = args.get("from")
+        self.to_ = args.get("to")

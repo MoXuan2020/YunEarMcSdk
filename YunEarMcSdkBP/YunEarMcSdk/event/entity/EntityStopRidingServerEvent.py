@@ -7,17 +7,17 @@ class EntityStopRidingEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityStopRidingEvent, self).__init__(callback)
-        self.id = None
-        self.rideId = None
-        self.exitFromRider = None
-        self.entityIsBeingDestroyed = None
-        self.switchingRides = None
-        self.cancel = None
+        self.id_ = None
+        self.rideId_ = None
+        self.exitFromRider_ = None
+        self.entityIsBeingDestroyed_ = None
+        self.switchingRides_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.rideId = args.get("rideId")
-        self.exitFromRider = args.get("exitFromRider")
-        self.entityIsBeingDestroyed = args.get("entityIsBeingDestroyed")
-        self.switchingRides = args.get("switchingRides")
-        self.cancel = args.get("cancel")
+        self.id_ = args.get("id")
+        self.rideId_ = args.get("rideId")
+        self.exitFromRider_ = args.get("exitFromRider")
+        self.entityIsBeingDestroyed_ = args.get("entityIsBeingDestroyed")
+        self.switchingRides_ = args.get("switchingRides")
+        self.cancel_ = args.get("cancel")

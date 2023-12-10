@@ -7,7 +7,7 @@ class AddPlayerCreatedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(AddPlayerCreatedClientEvent, self).__init__(callback)
-        self.playerId = None
+        self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
+        self.playerId_ = args.get("playerId")

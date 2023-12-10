@@ -7,7 +7,7 @@ class OnCarriedNewItemChangedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnCarriedNewItemChangedClientEvent, self).__init__(callback)
-        self.itemDict = None
+        self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.itemDict = args.get("itemDict")
+        self.itemDict_ = args.get("itemDict")

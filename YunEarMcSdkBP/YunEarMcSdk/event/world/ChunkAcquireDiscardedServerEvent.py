@@ -7,15 +7,15 @@ class ChunkAcquireDiscardedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ChunkAcquireDiscardedServerEvent, self).__init__(callback)
-        self.dimension = None
-        self.chunkPosX = None
-        self.chunkPosZ = None
-        self.entities = None
-        self.blockEntities = None
+        self.dimension_ = None
+        self.chunkPosX_ = None
+        self.chunkPosZ_ = None
+        self.entities_ = None
+        self.blockEntities_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension = args.get("dimension")
-        self.chunkPosX = args.get("chunkPosX")
-        self.chunkPosZ = args.get("chunkPosZ")
-        self.entities = args.get("entities")
-        self.blockEntities = args.get("blockEntities")
+        self.dimension_ = args.get("dimension")
+        self.chunkPosX_ = args.get("chunkPosX")
+        self.chunkPosZ_ = args.get("chunkPosZ")
+        self.entities_ = args.get("entities")
+        self.blockEntities_ = args.get("blockEntities")

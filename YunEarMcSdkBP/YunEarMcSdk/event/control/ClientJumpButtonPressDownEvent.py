@@ -7,7 +7,7 @@ class ClientJumpButtonPressDownEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientJumpButtonPressDownEvent, self).__init__(callback)
-        self.continueJump = None
+        self.continueJump_ = None
 
     def CreateFromArgs(self, args):
-        self.continueJump = args.get("continueJump")
+        self.continueJump_ = args.get("continueJump")

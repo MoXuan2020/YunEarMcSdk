@@ -7,9 +7,9 @@ class OnRainLevelChangeServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnRainLevelChangeServerEvent, self).__init__(callback)
-        self.oldLevel = None
-        self.newLevel = None
+        self.oldLevel_ = None
+        self.newLevel_ = None
 
     def CreateFromArgs(self, args):
-        self.oldLevel = args.get("oldLevel")
-        self.newLevel = args.get("newLevel")
+        self.oldLevel_ = args.get("oldLevel")
+        self.newLevel_ = args.get("newLevel")

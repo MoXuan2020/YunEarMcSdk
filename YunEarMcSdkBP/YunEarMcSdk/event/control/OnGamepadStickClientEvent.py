@@ -7,11 +7,11 @@ class OnGamepadStickClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnGamepadStickClientEvent, self).__init__(callback)
-        self.key = None
-        self.x = None
-        self.y = None
+        self.key_ = None
+        self.x_ = None
+        self.y_ = None
 
     def CreateFromArgs(self, args):
-        self.key = args.get("key")
-        self.x = args.get("x")
-        self.y = args.get("y")
+        self.key_ = args.get("key")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")

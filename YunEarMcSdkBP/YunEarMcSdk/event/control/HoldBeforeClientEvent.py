@@ -7,7 +7,7 @@ class HoldBeforeClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(HoldBeforeClientEvent, self).__init__(callback)
-        self.cancel = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel = args.get("cancel")
+        self.cancel_ = args.get("cancel")

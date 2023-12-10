@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from YunEarMcSdk.event.world.AddEntityServerEvent import AddEntityServerEvent
+from YunEarMcSdk.event.entity.HealthChangeBeforeServerEvent import HealthChangeBeforeServerEvent
 from YunEarMcSdk.sdk.Sdk import YunEarMcSdk
 
 
 @YunEarMcSdk
 class YunEarMcSdkTest(object):
 
-    @AddEntityServerEvent
-    def AddEntityServerEvent(self, event):
-        print event
+    @HealthChangeBeforeServerEvent
+    def HealthChangeBeforeServerEvent(self, event):
+        # type: (HealthChangeBeforeServerEvent) -> None
+        print event.__dict__
+        if event.from_ > event.to_:
+            event.cancel_ = True

@@ -7,11 +7,11 @@ class OnCarriedNewItemChangedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnCarriedNewItemChangedServerEvent, self).__init__(callback)
-        self.oldItemDict = None
-        self.newItemDict = None
-        self.playerId = None
+        self.oldItemDict_ = None
+        self.newItemDict_ = None
+        self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.oldItemDict = args.get("oldItemDict")
-        self.newItemDict = args.get("newItemDict")
-        self.playerId = args.get("playerId")
+        self.oldItemDict_ = args.get("oldItemDict")
+        self.newItemDict_ = args.get("newItemDict")
+        self.playerId_ = args.get("playerId")

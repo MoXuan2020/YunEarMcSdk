@@ -7,9 +7,9 @@ class LeaveEntityClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(LeaveEntityClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.entityId = None
+        self.playerId_ = None
+        self.entityId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.entityId = args.get("entityId")
+        self.playerId_ = args.get("playerId")
+        self.entityId_ = args.get("entityId")

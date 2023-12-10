@@ -7,11 +7,11 @@ class EntityDroppedItemServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityDroppedItemServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.itemDict = None
-        self.itemEntityId = None
+        self.entityId_ = None
+        self.itemDict_ = None
+        self.itemEntityId_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.itemDict = args.get("itemDict")
-        self.itemEntityId = args.get("itemEntityId")
+        self.entityId_ = args.get("entityId")
+        self.itemDict_ = args.get("itemDict")
+        self.itemEntityId_ = args.get("itemEntityId")

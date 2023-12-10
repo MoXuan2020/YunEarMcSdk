@@ -7,9 +7,9 @@ class ChunkGeneratedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ChunkGeneratedServerEvent, self).__init__(callback)
-        self.dimension = None
-        self.blockEntityData = None
+        self.dimension_ = None
+        self.blockEntityData_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension = args.get("dimension")
-        self.blockEntityData = args.get("blockEntityData")
+        self.dimension_ = args.get("dimension")
+        self.blockEntityData_ = args.get("blockEntityData")

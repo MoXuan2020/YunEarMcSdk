@@ -7,17 +7,17 @@ class BlockDestroyByLiquidServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(BlockDestroyByLiquidServerEvent, self).__init__(callback)
-        self.x = None
-        self.y = None
-        self.z = None
-        self.liquidName = None
-        self.blockName = None
-        self.auxValue = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.liquidName_ = None
+        self.blockName_ = None
+        self.auxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.liquidName = args.get("liquidName")
-        self.blockName = args.get("blockName")
-        self.auxValue = args.get("auxValue")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.liquidName_ = args.get("liquidName")
+        self.blockName_ = args.get("blockName")
+        self.auxValue_ = args.get("auxValue")

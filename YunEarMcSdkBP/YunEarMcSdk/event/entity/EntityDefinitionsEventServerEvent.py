@@ -7,9 +7,9 @@ class EntityDefinitionsEventServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityDefinitionsEventServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.eventName = None
+        self.entityId_ = None
+        self.eventName_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.eventName = args.get("eventName")
+        self.entityId_ = args.get("entityId")
+        self.eventName_ = args.get("eventName")

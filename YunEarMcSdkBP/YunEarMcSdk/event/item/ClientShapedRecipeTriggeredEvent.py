@@ -7,7 +7,7 @@ class ClientShapedRecipeTriggeredEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientShapedRecipeTriggeredEvent, self).__init__(callback)
-        self.recipeId = None
+        self.recipeId_ = None
 
     def CreateFromArgs(self, args):
-        self.recipeId = args.get("recipeId")
+        self.recipeId_ = args.get("recipeId")

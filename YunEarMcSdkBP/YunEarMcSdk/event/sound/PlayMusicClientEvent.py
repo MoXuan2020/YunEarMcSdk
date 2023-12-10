@@ -7,9 +7,9 @@ class PlayMusicClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(PlayMusicClientEvent, self).__init__(callback)
-        self.name = None
-        self.cancel = None
+        self.name_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.name = args.get("name")
-        self.cancel = args.get("cancel")
+        self.name_ = args.get("name")
+        self.cancel_ = args.get("cancel")

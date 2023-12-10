@@ -7,7 +7,7 @@ class PlayerSleepServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerSleepServerEvent, self).__init__(callback)
-        self.playerId = None
+        self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
+        self.playerId_ = args.get("playerId")

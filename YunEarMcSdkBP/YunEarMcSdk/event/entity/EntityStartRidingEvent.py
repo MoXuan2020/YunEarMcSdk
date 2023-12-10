@@ -7,9 +7,9 @@ class EntityStartRidingEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityStartRidingEvent, self).__init__(callback)
-        self.id = None
-        self.rideId = None
+        self.id_ = None
+        self.rideId_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.rideId = args.get("rideId")
+        self.id_ = args.get("id")
+        self.rideId_ = args.get("rideId")

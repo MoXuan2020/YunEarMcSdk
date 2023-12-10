@@ -7,19 +7,19 @@ class AddServerPlayerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(AddServerPlayerEvent, self).__init__(callback)
-        self.id = None
-        self.isTransfer = None
-        self.isReconnect = None
-        self.isPeUser = None
-        self.transferParam = None
-        self.uid = None
-        self.proxyId = None
+        self.id_ = None
+        self.isTransfer_ = None
+        self.isReconnect_ = None
+        self.isPeUser_ = None
+        self.transferParam_ = None
+        self.uid_ = None
+        self.proxyId_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.isTransfer = args.get("isTransfer")
-        self.isReconnect = args.get("isReconnect")
-        self.isPeUser = args.get("isPeUser")
-        self.transferParam = args.get("transferParam")
-        self.uid = args.get("uid")
-        self.proxyId = args.get("proxyId")
+        self.id_ = args.get("id")
+        self.isTransfer_ = args.get("isTransfer")
+        self.isReconnect_ = args.get("isReconnect")
+        self.isPeUser_ = args.get("isPeUser")
+        self.transferParam_ = args.get("transferParam")
+        self.uid_ = args.get("uid")
+        self.proxyId_ = args.get("proxyId")

@@ -7,11 +7,11 @@ class CommandEvent(ServerEvent):
 
     def __init__(self, callback):
         super(CommandEvent, self).__init__(callback)
-        self.entityId = None
-        self.command = None
-        self.cancel = None
+        self.entityId_ = None
+        self.command_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.command = args.get("command")
-        self.cancel = args.get("cancel")
+        self.entityId_ = args.get("entityId")
+        self.command_ = args.get("command")
+        self.cancel_ = args.get("cancel")

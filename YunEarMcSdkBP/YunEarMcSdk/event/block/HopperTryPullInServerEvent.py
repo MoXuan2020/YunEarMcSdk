@@ -7,21 +7,21 @@ class HopperTryPullInServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(HopperTryPullInServerEvent, self).__init__(callback)
-        self.x = None
-        self.y = None
-        self.z = None
-        self.abovePosX = None
-        self.abovePosY = None
-        self.abovePosZ = None
-        self.dimensionId = None
-        self.canHopper = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.abovePosX_ = None
+        self.abovePosY_ = None
+        self.abovePosZ_ = None
+        self.dimensionId_ = None
+        self.canHopper_ = None
 
     def CreateFromArgs(self, args):
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.abovePosX = args.get("abovePosX")
-        self.abovePosY = args.get("abovePosY")
-        self.abovePosZ = args.get("abovePosZ")
-        self.dimensionId = args.get("dimensionId")
-        self.canHopper = args.get("canHopper")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.abovePosX_ = args.get("abovePosX")
+        self.abovePosY_ = args.get("abovePosY")
+        self.abovePosZ_ = args.get("abovePosZ")
+        self.dimensionId_ = args.get("dimensionId")
+        self.canHopper_ = args.get("canHopper")

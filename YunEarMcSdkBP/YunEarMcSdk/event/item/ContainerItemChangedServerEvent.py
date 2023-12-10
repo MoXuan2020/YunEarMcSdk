@@ -7,17 +7,17 @@ class ContainerItemChangedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ContainerItemChangedServerEvent, self).__init__(callback)
-        self.pos = None
-        self.containerType = None
-        self.slot = None
-        self.dimensionId = None
-        self.oldItemDict = None
-        self.newItemDict = None
+        self.pos_ = None
+        self.containerType_ = None
+        self.slot_ = None
+        self.dimensionId_ = None
+        self.oldItemDict_ = None
+        self.newItemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.pos = args.get("pos")
-        self.containerType = args.get("containerType")
-        self.slot = args.get("slot")
-        self.dimensionId = args.get("dimensionId")
-        self.oldItemDict = args.get("oldItemDict")
-        self.newItemDict = args.get("newItemDict")
+        self.pos_ = args.get("pos")
+        self.containerType_ = args.get("containerType")
+        self.slot_ = args.get("slot")
+        self.dimensionId_ = args.get("dimensionId")
+        self.oldItemDict_ = args.get("oldItemDict")
+        self.newItemDict_ = args.get("newItemDict")

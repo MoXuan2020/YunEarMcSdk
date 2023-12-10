@@ -7,9 +7,9 @@ class AchievementButtonMovedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(AchievementButtonMovedClientEvent, self).__init__(callback)
-        self.oldPosition = None
-        self.newPosition = None
+        self.oldPosition_ = None
+        self.newPosition_ = None
 
     def CreateFromArgs(self, args):
-        self.oldPosition = args.get("oldPosition")
-        self.newPosition = args.get("newPosition")
+        self.oldPosition_ = args.get("oldPosition")
+        self.newPosition_ = args.get("newPosition")

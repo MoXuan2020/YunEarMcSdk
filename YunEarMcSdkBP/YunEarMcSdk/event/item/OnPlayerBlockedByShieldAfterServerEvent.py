@@ -7,13 +7,13 @@ class OnPlayerBlockedByShieldAfterServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnPlayerBlockedByShieldAfterServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.sourceId = None
-        self.itemDict = None
-        self.damage = None
+        self.playerId_ = None
+        self.sourceId_ = None
+        self.itemDict_ = None
+        self.damage_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.sourceId = args.get("sourceId")
-        self.itemDict = args.get("itemDict")
-        self.damage = args.get("damage")
+        self.playerId_ = args.get("playerId")
+        self.sourceId_ = args.get("sourceId")
+        self.itemDict_ = args.get("itemDict")
+        self.damage_ = args.get("damage")

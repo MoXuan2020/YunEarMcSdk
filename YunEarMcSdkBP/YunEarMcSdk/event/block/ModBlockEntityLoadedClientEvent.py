@@ -7,15 +7,15 @@ class ModBlockEntityLoadedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ModBlockEntityLoadedClientEvent, self).__init__(callback)
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.dimensionId = None
-        self.blockName = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.dimensionId_ = None
+        self.blockName_ = None
 
     def CreateFromArgs(self, args):
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.dimensionId = args.get("dimensionId")
-        self.blockName = args.get("blockName")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.dimensionId_ = args.get("dimensionId")
+        self.blockName_ = args.get("blockName")

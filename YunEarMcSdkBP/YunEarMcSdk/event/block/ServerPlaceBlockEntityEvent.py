@@ -7,15 +7,15 @@ class ServerPlaceBlockEntityEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ServerPlaceBlockEntityEvent, self).__init__(callback)
-        self.blockName = None
-        self.dimension = None
-        self.posX = None
-        self.posY = None
-        self.posZ = None
+        self.blockName_ = None
+        self.dimension_ = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
 
     def CreateFromArgs(self, args):
-        self.blockName = args.get("blockName")
-        self.dimension = args.get("dimension")
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
+        self.blockName_ = args.get("blockName")
+        self.dimension_ = args.get("dimension")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")

@@ -7,17 +7,17 @@ class EntityEffectDamageServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityEffectDamageServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.damage = None
-        self.attributeBuffType = None
-        self.duration = None
-        self.lifeTimer = None
-        self.isInstantaneous = None
+        self.entityId_ = None
+        self.damage_ = None
+        self.attributeBuffType_ = None
+        self.duration_ = None
+        self.lifeTimer_ = None
+        self.isInstantaneous_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.damage = args.get("damage")
-        self.attributeBuffType = args.get("attributeBuffType")
-        self.duration = args.get("duration")
-        self.lifeTimer = args.get("lifeTimer")
-        self.isInstantaneous = args.get("isInstantaneous")
+        self.entityId_ = args.get("entityId")
+        self.damage_ = args.get("damage")
+        self.attributeBuffType_ = args.get("attributeBuffType")
+        self.duration_ = args.get("duration")
+        self.lifeTimer_ = args.get("lifeTimer")
+        self.isInstantaneous_ = args.get("isInstantaneous")

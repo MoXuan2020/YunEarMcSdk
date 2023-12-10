@@ -7,7 +7,7 @@ class OnItemSlotButtonClickedEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnItemSlotButtonClickedEvent, self).__init__(callback)
-        self.slotIndex = None
+        self.slotIndex_ = None
 
     def CreateFromArgs(self, args):
-        self.slotIndex = args.get("slotIndex")
+        self.slotIndex_ = args.get("slotIndex")

@@ -7,9 +7,9 @@ class StartUsingItemClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(StartUsingItemClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.itemDict = None
+        self.playerId_ = None
+        self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.itemDict = args.get("itemDict")
+        self.playerId_ = args.get("playerId")
+        self.itemDict_ = args.get("itemDict")

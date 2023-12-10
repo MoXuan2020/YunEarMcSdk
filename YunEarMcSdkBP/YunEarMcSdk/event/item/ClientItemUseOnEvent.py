@@ -7,29 +7,29 @@ class ClientItemUseOnEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientItemUseOnEvent, self).__init__(callback)
-        self.entityId = None
-        self.itemDict = None
-        self.x = None
-        self.y = None
-        self.z = None
-        self.blockName = None
-        self.blockAuxValue = None
-        self.face = None
-        self.clickX = None
-        self.clickY = None
-        self.clickZ = None
-        self.ret = None
+        self.entityId_ = None
+        self.itemDict_ = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.blockName_ = None
+        self.blockAuxValue_ = None
+        self.face_ = None
+        self.clickX_ = None
+        self.clickY_ = None
+        self.clickZ_ = None
+        self.ret_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.itemDict = args.get("itemDict")
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.blockName = args.get("blockName")
-        self.blockAuxValue = args.get("blockAuxValue")
-        self.face = args.get("face")
-        self.clickX = args.get("clickX")
-        self.clickY = args.get("clickY")
-        self.clickZ = args.get("clickZ")
-        self.ret = args.get("ret")
+        self.entityId_ = args.get("entityId")
+        self.itemDict_ = args.get("itemDict")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.blockName_ = args.get("blockName")
+        self.blockAuxValue_ = args.get("blockAuxValue")
+        self.face_ = args.get("face")
+        self.clickX_ = args.get("clickX")
+        self.clickY_ = args.get("clickY")
+        self.clickZ_ = args.get("clickZ")
+        self.ret_ = args.get("ret")

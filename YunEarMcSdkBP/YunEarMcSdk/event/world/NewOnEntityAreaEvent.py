@@ -7,11 +7,11 @@ class NewOnEntityAreaEvent(ServerEvent):
 
     def __init__(self, callback):
         super(NewOnEntityAreaEvent, self).__init__(callback)
-        self.name = None
-        self.enteredEntities = None
-        self.leftEntities = None
+        self.name_ = None
+        self.enteredEntities_ = None
+        self.leftEntities_ = None
 
     def CreateFromArgs(self, args):
-        self.name = args.get("name")
-        self.enteredEntities = args.get("enteredEntities")
-        self.leftEntities = args.get("leftEntities")
+        self.name_ = args.get("name")
+        self.enteredEntities_ = args.get("enteredEntities")
+        self.leftEntities_ = args.get("leftEntities")

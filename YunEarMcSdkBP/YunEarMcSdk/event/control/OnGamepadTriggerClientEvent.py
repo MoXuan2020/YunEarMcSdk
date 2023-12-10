@@ -7,9 +7,9 @@ class OnGamepadTriggerClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnGamepadTriggerClientEvent, self).__init__(callback)
-        self.key = None
-        self.magnitude = None
+        self.key_ = None
+        self.magnitude_ = None
 
     def CreateFromArgs(self, args):
-        self.key = args.get("key")
-        self.magnitude = args.get("magnitude")
+        self.key_ = args.get("key")
+        self.magnitude_ = args.get("magnitude")

@@ -7,15 +7,15 @@ class OnPlayerActiveShieldServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnPlayerActiveShieldServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.isActive = None
-        self.itemDict = None
-        self.cancelable = None
-        self.cancel = None
+        self.playerId_ = None
+        self.isActive_ = None
+        self.itemDict_ = None
+        self.cancelable_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.isActive = args.get("isActive")
-        self.itemDict = args.get("itemDict")
-        self.cancelable = args.get("cancelable")
-        self.cancel = args.get("cancel")
+        self.playerId_ = args.get("playerId")
+        self.isActive_ = args.get("isActive")
+        self.itemDict_ = args.get("itemDict")
+        self.cancelable_ = args.get("cancelable")
+        self.cancel_ = args.get("cancel")

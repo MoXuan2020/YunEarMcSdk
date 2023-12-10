@@ -7,15 +7,15 @@ class HealthChangeBeforeServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(HealthChangeBeforeServerEvent, self).__init__(callback)
-        self.entityId = None
-        self._from = None
-        self.to = None
-        self.byScript = None
-        self.cancel = None
+        self.entityId_ = None
+        self.from_ = None
+        self.to_ = None
+        self.byScript_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self._from = args.get("from")
-        self.to = args.get("to")
-        self.byScript = args.get("byScript")
-        self.cancel = args.get("cancel")
+        self.entityId_ = args.get("entityId")
+        self.from_ = args.get("from")
+        self.to_ = args.get("to")
+        self.byScript_ = args.get("byScript")
+        self.cancel_ = args.get("cancel")

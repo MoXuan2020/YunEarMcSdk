@@ -7,13 +7,13 @@ class CraftItemOutputChangeServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(CraftItemOutputChangeServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.itemDict = None
-        self.screenContainerType = None
-        self.cancel = None
+        self.playerId_ = None
+        self.itemDict_ = None
+        self.screenContainerType_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.itemDict = args.get("itemDict")
-        self.screenContainerType = args.get("screenContainerType")
-        self.cancel = args.get("cancel")
+        self.playerId_ = args.get("playerId")
+        self.itemDict_ = args.get("itemDict")
+        self.screenContainerType_ = args.get("screenContainerType")
+        self.cancel_ = args.get("cancel")

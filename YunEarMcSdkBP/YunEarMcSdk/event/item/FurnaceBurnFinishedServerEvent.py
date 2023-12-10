@@ -7,15 +7,15 @@ class FurnaceBurnFinishedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(FurnaceBurnFinishedServerEvent, self).__init__(callback)
-        self.dimensionId = None
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.itemDict = None
+        self.dimensionId_ = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.dimensionId = args.get("dimensionId")
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.itemDict = args.get("itemDict")
+        self.dimensionId_ = args.get("dimensionId")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.itemDict_ = args.get("itemDict")

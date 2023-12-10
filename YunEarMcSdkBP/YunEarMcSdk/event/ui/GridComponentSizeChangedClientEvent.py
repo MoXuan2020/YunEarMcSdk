@@ -7,7 +7,7 @@ class GridComponentSizeChangedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(GridComponentSizeChangedClientEvent, self).__init__(callback)
-        self.path = None
+        self.path_ = None
 
     def CreateFromArgs(self, args):
-        self.path = args.get("path")
+        self.path_ = args.get("path")

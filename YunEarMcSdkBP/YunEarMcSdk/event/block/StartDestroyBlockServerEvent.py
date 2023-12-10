@@ -7,17 +7,17 @@ class StartDestroyBlockServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(StartDestroyBlockServerEvent, self).__init__(callback)
-        self.pos = None
-        self.blockName = None
-        self.auxValue = None
-        self.playerId = None
-        self.dimensionId = None
-        self.cancel = None
+        self.pos_ = None
+        self.blockName_ = None
+        self.auxValue_ = None
+        self.playerId_ = None
+        self.dimensionId_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.pos = args.get("pos")
-        self.blockName = args.get("blockName")
-        self.auxValue = args.get("auxValue")
-        self.playerId = args.get("playerId")
-        self.dimensionId = args.get("dimensionId")
-        self.cancel = args.get("cancel")
+        self.pos_ = args.get("pos")
+        self.blockName_ = args.get("blockName")
+        self.auxValue_ = args.get("auxValue")
+        self.playerId_ = args.get("playerId")
+        self.dimensionId_ = args.get("dimensionId")
+        self.cancel_ = args.get("cancel")

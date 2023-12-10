@@ -7,25 +7,25 @@ class ShearsUseToBlockBeforeServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ShearsUseToBlockBeforeServerEvent, self).__init__(callback)
-        self.blockX = None
-        self.blockY = None
-        self.blockZ = None
-        self.blockName = None
-        self.auxData = None
-        self.dropName = None
-        self.dropCount = None
-        self.entityId = None
-        self.dimensionId = None
-        self.cancelShears = None
+        self.blockX_ = None
+        self.blockY_ = None
+        self.blockZ_ = None
+        self.blockName_ = None
+        self.auxData_ = None
+        self.dropName_ = None
+        self.dropCount_ = None
+        self.entityId_ = None
+        self.dimensionId_ = None
+        self.cancelShears_ = None
 
     def CreateFromArgs(self, args):
-        self.blockX = args.get("blockX")
-        self.blockY = args.get("blockY")
-        self.blockZ = args.get("blockZ")
-        self.blockName = args.get("blockName")
-        self.auxData = args.get("auxData")
-        self.dropName = args.get("dropName")
-        self.dropCount = args.get("dropCount")
-        self.entityId = args.get("entityId")
-        self.dimensionId = args.get("dimensionId")
-        self.cancelShears = args.get("cancelShears")
+        self.blockX_ = args.get("blockX")
+        self.blockY_ = args.get("blockY")
+        self.blockZ_ = args.get("blockZ")
+        self.blockName_ = args.get("blockName")
+        self.auxData_ = args.get("auxData")
+        self.dropName_ = args.get("dropName")
+        self.dropCount_ = args.get("dropCount")
+        self.entityId_ = args.get("entityId")
+        self.dimensionId_ = args.get("dimensionId")
+        self.cancelShears_ = args.get("cancelShears")

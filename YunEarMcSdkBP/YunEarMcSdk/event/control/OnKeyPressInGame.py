@@ -7,11 +7,11 @@ class OnKeyPressInGame(ClientEvent):
 
     def __init__(self, callback):
         super(OnKeyPressInGame, self).__init__(callback)
-        self.screenName = None
-        self.key = None
-        self.isDown = None
+        self.screenName_ = None
+        self.key_ = None
+        self.isDown_ = None
 
     def CreateFromArgs(self, args):
-        self.screenName = args.get("screenName")
-        self.key = args.get("key")
-        self.isDown = args.get("isDown")
+        self.screenName_ = args.get("screenName")
+        self.key_ = args.get("key")
+        self.isDown_ = args.get("isDown")

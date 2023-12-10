@@ -7,13 +7,13 @@ class OnNewArmorExchangeServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnNewArmorExchangeServerEvent, self).__init__(callback)
-        self.slot = None
-        self.oldArmorDict = None
-        self.newArmorDict = None
-        self.playerId = None
+        self.slot_ = None
+        self.oldArmorDict_ = None
+        self.newArmorDict_ = None
+        self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.slot = args.get("slot")
-        self.oldArmorDict = args.get("oldArmorDict")
-        self.newArmorDict = args.get("newArmorDict")
-        self.playerId = args.get("playerId")
+        self.slot_ = args.get("slot")
+        self.oldArmorDict_ = args.get("oldArmorDict")
+        self.newArmorDict_ = args.get("newArmorDict")
+        self.playerId_ = args.get("playerId")

@@ -7,27 +7,27 @@ class PistonActionServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PistonActionServerEvent, self).__init__(callback)
-        self.cancel = None
-        self.action = None
-        self.pistonFacing = None
-        self.pistonMoveFacing = None
-        self.dimensionId = None
-        self.pistonX = None
-        self.pistonY = None
-        self.pistonZ = None
-        self.blockList = None
-        self.breakBlockList = None
-        self.entityList = None
+        self.cancel_ = None
+        self.action_ = None
+        self.pistonFacing_ = None
+        self.pistonMoveFacing_ = None
+        self.dimensionId_ = None
+        self.pistonX_ = None
+        self.pistonY_ = None
+        self.pistonZ_ = None
+        self.blockList_ = None
+        self.breakBlockList_ = None
+        self.entityList_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel = args.get("cancel")
-        self.action = args.get("action")
-        self.pistonFacing = args.get("pistonFacing")
-        self.pistonMoveFacing = args.get("pistonMoveFacing")
-        self.dimensionId = args.get("dimensionId")
-        self.pistonX = args.get("pistonX")
-        self.pistonY = args.get("pistonY")
-        self.pistonZ = args.get("pistonZ")
-        self.blockList = args.get("blockList")
-        self.breakBlockList = args.get("breakBlockList")
-        self.entityList = args.get("entityList")
+        self.cancel_ = args.get("cancel")
+        self.action_ = args.get("action")
+        self.pistonFacing_ = args.get("pistonFacing")
+        self.pistonMoveFacing_ = args.get("pistonMoveFacing")
+        self.dimensionId_ = args.get("dimensionId")
+        self.pistonX_ = args.get("pistonX")
+        self.pistonY_ = args.get("pistonY")
+        self.pistonZ_ = args.get("pistonZ")
+        self.blockList_ = args.get("blockList")
+        self.breakBlockList_ = args.get("breakBlockList")
+        self.entityList_ = args.get("entityList")

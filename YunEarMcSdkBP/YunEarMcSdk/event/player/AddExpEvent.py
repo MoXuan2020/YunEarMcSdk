@@ -7,9 +7,9 @@ class AddExpEvent(ServerEvent):
 
     def __init__(self, callback):
         super(AddExpEvent, self).__init__(callback)
-        self.id = None
-        self.addExp = None
+        self.id_ = None
+        self.addExp_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.addExp = args.get("addExp")
+        self.id_ = args.get("id")
+        self.addExp_ = args.get("addExp")

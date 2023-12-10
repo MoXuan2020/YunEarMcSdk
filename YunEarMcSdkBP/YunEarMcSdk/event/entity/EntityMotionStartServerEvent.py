@@ -7,9 +7,9 @@ class EntityMotionStartServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityMotionStartServerEvent, self).__init__(callback)
-        self.motionId = None
-        self.entityId = None
+        self.motionId_ = None
+        self.entityId_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId = args.get("motionId")
-        self.entityId = args.get("entityId")
+        self.motionId_ = args.get("motionId")
+        self.entityId_ = args.get("entityId")

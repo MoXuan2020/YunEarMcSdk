@@ -7,23 +7,23 @@ class CommandBlockUpdateEvent(ServerEvent):
 
     def __init__(self, callback):
         super(CommandBlockUpdateEvent, self).__init__(callback)
-        self.playerId = None
-        self.playerUid = None
-        self.command = None
-        self.isBlock = None
-        self.blockX = None
-        self.blockY = None
-        self.blockZ = None
-        self.victimId = None
-        self.cancel = None
+        self.playerId_ = None
+        self.playerUid_ = None
+        self.command_ = None
+        self.isBlock_ = None
+        self.blockX_ = None
+        self.blockY_ = None
+        self.blockZ_ = None
+        self.victimId_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.playerUid = args.get("playerUid")
-        self.command = args.get("command")
-        self.isBlock = args.get("isBlock")
-        self.blockX = args.get("blockX")
-        self.blockY = args.get("blockY")
-        self.blockZ = args.get("blockZ")
-        self.victimId = args.get("victimId")
-        self.cancel = args.get("cancel")
+        self.playerId_ = args.get("playerId")
+        self.playerUid_ = args.get("playerUid")
+        self.command_ = args.get("command")
+        self.isBlock_ = args.get("isBlock")
+        self.blockX_ = args.get("blockX")
+        self.blockY_ = args.get("blockY")
+        self.blockZ_ = args.get("blockZ")
+        self.victimId_ = args.get("victimId")
+        self.cancel_ = args.get("cancel")

@@ -7,11 +7,11 @@ class ChangeLevelUpCostServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ChangeLevelUpCostServerEvent, self).__init__(callback)
-        self.level = None
-        self.levelUpCostExp = None
-        self.changed = None
+        self.level_ = None
+        self.levelUpCostExp_ = None
+        self.changed_ = None
 
     def CreateFromArgs(self, args):
-        self.level = args.get("level")
-        self.levelUpCostExp = args.get("levelUpCostExp")
-        self.changed = args.get("changed")
+        self.level_ = args.get("level")
+        self.levelUpCostExp_ = args.get("levelUpCostExp")
+        self.changed_ = args.get("changed")

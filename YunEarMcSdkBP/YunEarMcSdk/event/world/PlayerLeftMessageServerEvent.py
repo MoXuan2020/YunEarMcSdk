@@ -7,13 +7,13 @@ class PlayerLeftMessageServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerLeftMessageServerEvent, self).__init__(callback)
-        self.id = None
-        self.name = None
-        self.cancel = None
-        self.message = None
+        self.id_ = None
+        self.name_ = None
+        self.cancel_ = None
+        self.message_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.name = args.get("name")
-        self.cancel = args.get("cancel")
-        self.message = args.get("message")
+        self.id_ = args.get("id")
+        self.name_ = args.get("name")
+        self.cancel_ = args.get("cancel")
+        self.message_ = args.get("message")

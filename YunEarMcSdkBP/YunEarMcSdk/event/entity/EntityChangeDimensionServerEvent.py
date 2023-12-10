@@ -7,23 +7,23 @@ class EntityChangeDimensionServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityChangeDimensionServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.fromDimensionId = None
-        self.toDimensionId = None
-        self.fromX = None
-        self.fromY = None
-        self.fromZ = None
-        self.toX = None
-        self.toY = None
-        self.toZ = None
+        self.entityId_ = None
+        self.fromDimensionId_ = None
+        self.toDimensionId_ = None
+        self.fromX_ = None
+        self.fromY_ = None
+        self.fromZ_ = None
+        self.toX_ = None
+        self.toY_ = None
+        self.toZ_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.fromDimensionId = args.get("fromDimensionId")
-        self.toDimensionId = args.get("toDimensionId")
-        self.fromX = args.get("fromX")
-        self.fromY = args.get("fromY")
-        self.fromZ = args.get("fromZ")
-        self.toX = args.get("toX")
-        self.toY = args.get("toY")
-        self.toZ = args.get("toZ")
+        self.entityId_ = args.get("entityId")
+        self.fromDimensionId_ = args.get("fromDimensionId")
+        self.toDimensionId_ = args.get("toDimensionId")
+        self.fromX_ = args.get("fromX")
+        self.fromY_ = args.get("fromY")
+        self.fromZ_ = args.get("fromZ")
+        self.toX_ = args.get("toX")
+        self.toY_ = args.get("toY")
+        self.toZ_ = args.get("toZ")

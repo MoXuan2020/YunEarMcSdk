@@ -7,17 +7,17 @@ class BlockRemoveServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(BlockRemoveServerEvent, self).__init__(callback)
-        self.x = None
-        self.y = None
-        self.z = None
-        self.fullName = None
-        self.auxValue = None
-        self.dimension = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.fullName_ = None
+        self.auxValue_ = None
+        self.dimension_ = None
 
     def CreateFromArgs(self, args):
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.fullName = args.get("fullName")
-        self.auxValue = args.get("auxValue")
-        self.dimension = args.get("dimension")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.fullName_ = args.get("fullName")
+        self.auxValue_ = args.get("auxValue")
+        self.dimension_ = args.get("dimension")

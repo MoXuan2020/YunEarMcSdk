@@ -7,31 +7,31 @@ class OnStandOnBlockServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnStandOnBlockServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.dimensionId = None
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.motionX = None
-        self.motionY = None
-        self.motionZ = None
-        self.blockX = None
-        self.blockY = None
-        self.blockZ = None
-        self.blockName = None
-        self.cancel = None
+        self.entityId_ = None
+        self.dimensionId_ = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.motionX_ = None
+        self.motionY_ = None
+        self.motionZ_ = None
+        self.blockX_ = None
+        self.blockY_ = None
+        self.blockZ_ = None
+        self.blockName_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.dimensionId = args.get("dimensionId")
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.motionX = args.get("motionX")
-        self.motionY = args.get("motionY")
-        self.motionZ = args.get("motionZ")
-        self.blockX = args.get("blockX")
-        self.blockY = args.get("blockY")
-        self.blockZ = args.get("blockZ")
-        self.blockName = args.get("blockName")
-        self.cancel = args.get("cancel")
+        self.entityId_ = args.get("entityId")
+        self.dimensionId_ = args.get("dimensionId")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.motionX_ = args.get("motionX")
+        self.motionY_ = args.get("motionY")
+        self.motionZ_ = args.get("motionZ")
+        self.blockX_ = args.get("blockX")
+        self.blockY_ = args.get("blockY")
+        self.blockZ_ = args.get("blockZ")
+        self.blockName_ = args.get("blockName")
+        self.cancel_ = args.get("cancel")

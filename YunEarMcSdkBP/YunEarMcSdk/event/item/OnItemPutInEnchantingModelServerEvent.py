@@ -7,13 +7,13 @@ class OnItemPutInEnchantingModelServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnItemPutInEnchantingModelServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.slotType = None
-        self.options = None
-        self.change = None
+        self.playerId_ = None
+        self.slotType_ = None
+        self.options_ = None
+        self.change_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.slotType = args.get("slotType")
-        self.options = args.get("options")
-        self.change = args.get("change")
+        self.playerId_ = args.get("playerId")
+        self.slotType_ = args.get("slotType")
+        self.options_ = args.get("options")
+        self.change_ = args.get("change")

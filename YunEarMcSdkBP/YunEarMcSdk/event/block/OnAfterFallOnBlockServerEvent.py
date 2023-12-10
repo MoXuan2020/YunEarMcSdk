@@ -7,23 +7,23 @@ class OnAfterFallOnBlockServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnAfterFallOnBlockServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.motionX = None
-        self.motionY = None
-        self.motionZ = None
-        self.blockName = None
-        self.calculate = None
+        self.entityId_ = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.motionX_ = None
+        self.motionY_ = None
+        self.motionZ_ = None
+        self.blockName_ = None
+        self.calculate_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.motionX = args.get("motionX")
-        self.motionY = args.get("motionY")
-        self.motionZ = args.get("motionZ")
-        self.blockName = args.get("blockName")
-        self.calculate = args.get("calculate")
+        self.entityId_ = args.get("entityId")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.motionX_ = args.get("motionX")
+        self.motionY_ = args.get("motionY")
+        self.motionZ_ = args.get("motionZ")
+        self.blockName_ = args.get("blockName")
+        self.calculate_ = args.get("calculate")

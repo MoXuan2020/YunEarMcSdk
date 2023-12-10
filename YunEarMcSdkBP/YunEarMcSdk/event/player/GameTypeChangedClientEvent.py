@@ -7,11 +7,11 @@ class GameTypeChangedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(GameTypeChangedClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.oldGameType = None
-        self.newGameType = None
+        self.playerId_ = None
+        self.oldGameType_ = None
+        self.newGameType_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.oldGameType = args.get("oldGameType")
-        self.newGameType = args.get("newGameType")
+        self.playerId_ = args.get("playerId")
+        self.oldGameType_ = args.get("oldGameType")
+        self.newGameType_ = args.get("newGameType")

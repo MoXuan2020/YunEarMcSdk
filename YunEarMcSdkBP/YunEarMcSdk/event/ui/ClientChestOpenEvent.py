@@ -7,13 +7,13 @@ class ClientChestOpenEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientChestOpenEvent, self).__init__(callback)
-        self.playerId = None
-        self.x = None
-        self.y = None
-        self.z = None
+        self.playerId_ = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
+        self.playerId_ = args.get("playerId")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")

@@ -7,13 +7,13 @@ class ChunkLoadedServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ChunkLoadedServerEvent, self).__init__(callback)
-        self.dimension = None
-        self.chunkPosX = None
-        self.chunkPosZ = None
-        self.blockEntities = None
+        self.dimension_ = None
+        self.chunkPosX_ = None
+        self.chunkPosZ_ = None
+        self.blockEntities_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension = args.get("dimension")
-        self.chunkPosX = args.get("chunkPosX")
-        self.chunkPosZ = args.get("chunkPosZ")
-        self.blockEntities = args.get("blockEntities")
+        self.dimension_ = args.get("dimension")
+        self.chunkPosX_ = args.get("chunkPosX")
+        self.chunkPosZ_ = args.get("chunkPosZ")
+        self.blockEntities_ = args.get("blockEntities")

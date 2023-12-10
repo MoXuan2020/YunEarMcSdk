@@ -7,17 +7,17 @@ class ServerPreBlockPatternEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ServerPreBlockPatternEvent, self).__init__(callback)
-        self.enable = None
-        self.x = None
-        self.y = None
-        self.z = None
-        self.dimensionId = None
-        self.entityWillBeGenerated = None
+        self.enable_ = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.dimensionId_ = None
+        self.entityWillBeGenerated_ = None
 
     def CreateFromArgs(self, args):
-        self.enable = args.get("enable")
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.dimensionId = args.get("dimensionId")
-        self.entityWillBeGenerated = args.get("entityWillBeGenerated")
+        self.enable_ = args.get("enable")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.dimensionId_ = args.get("dimensionId")
+        self.entityWillBeGenerated_ = args.get("entityWillBeGenerated")

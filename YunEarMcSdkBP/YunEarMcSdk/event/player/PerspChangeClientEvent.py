@@ -7,9 +7,9 @@ class PerspChangeClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(PerspChangeClientEvent, self).__init__(callback)
-        self._from = None
-        self.to = None
+        self.from_ = None
+        self.to_ = None
 
     def CreateFromArgs(self, args):
-        self._from = args.get("from")
-        self.to = args.get("to")
+        self.from_ = args.get("from")
+        self.to_ = args.get("to")

@@ -7,9 +7,9 @@ class OnMobHitMobServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnMobHitMobServerEvent, self).__init__(callback)
-        self.mobId = None
-        self.hittedMobList = None
+        self.mobId_ = None
+        self.hittedMobList_ = None
 
     def CreateFromArgs(self, args):
-        self.mobId = args.get("mobId")
-        self.hittedMobList = args.get("hittedMobList")
+        self.mobId_ = args.get("mobId")
+        self.hittedMobList_ = args.get("hittedMobList")

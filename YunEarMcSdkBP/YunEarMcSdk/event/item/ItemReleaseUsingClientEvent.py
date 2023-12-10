@@ -7,15 +7,15 @@ class ItemReleaseUsingClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ItemReleaseUsingClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.durationLeft = None
-        self.itemDict = None
-        self.maxUseDuration = None
-        self.cancel = None
+        self.playerId_ = None
+        self.durationLeft_ = None
+        self.itemDict_ = None
+        self.maxUseDuration_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.durationLeft = args.get("durationLeft")
-        self.itemDict = args.get("itemDict")
-        self.maxUseDuration = args.get("maxUseDuration")
-        self.cancel = args.get("cancel")
+        self.playerId_ = args.get("playerId")
+        self.durationLeft_ = args.get("durationLeft")
+        self.itemDict_ = args.get("itemDict")
+        self.maxUseDuration_ = args.get("maxUseDuration")
+        self.cancel_ = args.get("cancel")

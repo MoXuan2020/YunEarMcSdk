@@ -7,21 +7,21 @@ class FallingBlockBreakServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(FallingBlockBreakServerEvent, self).__init__(callback)
-        self.fallingBlockId = None
-        self.fallingBlockX = None
-        self.fallingBlockY = None
-        self.fallingBlockZ = None
-        self.blockName = None
-        self.fallTickAmount = None
-        self.dimensionId = None
-        self.cancelDrop = None
+        self.fallingBlockId_ = None
+        self.fallingBlockX_ = None
+        self.fallingBlockY_ = None
+        self.fallingBlockZ_ = None
+        self.blockName_ = None
+        self.fallTickAmount_ = None
+        self.dimensionId_ = None
+        self.cancelDrop_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId = args.get("fallingBlockId")
-        self.fallingBlockX = args.get("fallingBlockX")
-        self.fallingBlockY = args.get("fallingBlockY")
-        self.fallingBlockZ = args.get("fallingBlockZ")
-        self.blockName = args.get("blockName")
-        self.fallTickAmount = args.get("fallTickAmount")
-        self.dimensionId = args.get("dimensionId")
-        self.cancelDrop = args.get("cancelDrop")
+        self.fallingBlockId_ = args.get("fallingBlockId")
+        self.fallingBlockX_ = args.get("fallingBlockX")
+        self.fallingBlockY_ = args.get("fallingBlockY")
+        self.fallingBlockZ_ = args.get("fallingBlockZ")
+        self.blockName_ = args.get("blockName")
+        self.fallTickAmount_ = args.get("fallTickAmount")
+        self.dimensionId_ = args.get("dimensionId")
+        self.cancelDrop_ = args.get("cancelDrop")

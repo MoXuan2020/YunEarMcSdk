@@ -7,17 +7,17 @@ class PlayerAttackEntityEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerAttackEntityEvent, self).__init__(callback)
-        self.playerId = None
-        self.victimId = None
-        self.damage = None
-        self.isValid = None
-        self.cancel = None
-        self.isKnockBack = None
+        self.playerId_ = None
+        self.victimId_ = None
+        self.damage_ = None
+        self.isValid_ = None
+        self.cancel_ = None
+        self.isKnockBack_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.victimId = args.get("victimId")
-        self.damage = args.get("damage")
-        self.isValid = args.get("isValid")
-        self.cancel = args.get("cancel")
-        self.isKnockBack = args.get("isKnockBack")
+        self.playerId_ = args.get("playerId")
+        self.victimId_ = args.get("victimId")
+        self.damage_ = args.get("damage")
+        self.isValid_ = args.get("isValid")
+        self.cancel_ = args.get("cancel")
+        self.isKnockBack_ = args.get("isKnockBack")

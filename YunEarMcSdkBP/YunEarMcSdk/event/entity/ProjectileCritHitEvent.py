@@ -7,9 +7,9 @@ class ProjectileCritHitEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ProjectileCritHitEvent, self).__init__(callback)
-        self.id = None
-        self.targetId = None
+        self.id_ = None
+        self.targetId_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.targetId = args.get("targetId")
+        self.id_ = args.get("id")
+        self.targetId_ = args.get("targetId")

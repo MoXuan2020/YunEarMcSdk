@@ -7,11 +7,11 @@ class ExtinguishFireClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ExtinguishFireClientEvent, self).__init__(callback)
-        self.pos = None
-        self.playerId = None
-        self.cancel = None
+        self.pos_ = None
+        self.playerId_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.pos = args.get("pos")
-        self.playerId = args.get("playerId")
-        self.cancel = args.get("cancel")
+        self.pos_ = args.get("pos")
+        self.playerId_ = args.get("playerId")
+        self.cancel_ = args.get("cancel")

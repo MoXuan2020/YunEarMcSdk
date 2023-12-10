@@ -7,9 +7,9 @@ class StartRidingClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(StartRidingClientEvent, self).__init__(callback)
-        self.actorId = None
-        self.victimId = None
+        self.actorId_ = None
+        self.victimId_ = None
 
     def CreateFromArgs(self, args):
-        self.actorId = args.get("actorId")
-        self.victimId = args.get("victimId")
+        self.actorId_ = args.get("actorId")
+        self.victimId_ = args.get("victimId")

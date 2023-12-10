@@ -7,23 +7,23 @@ class AddEntityClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(AddEntityClientEvent, self).__init__(callback)
-        self.id = None
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.dimensionId = None
-        self.isBaby = None
-        self.engineTypeStr = None
-        self.itemName = None
-        self.auxValue = None
+        self.id_ = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.dimensionId_ = None
+        self.isBaby_ = None
+        self.engineTypeStr_ = None
+        self.itemName_ = None
+        self.auxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.dimensionId = args.get("dimensionId")
-        self.isBaby = args.get("isBaby")
-        self.engineTypeStr = args.get("engineTypeStr")
-        self.itemName = args.get("itemName")
-        self.auxValue = args.get("auxValue")
+        self.id_ = args.get("id")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.dimensionId_ = args.get("dimensionId")
+        self.isBaby_ = args.get("isBaby")
+        self.engineTypeStr_ = args.get("engineTypeStr")
+        self.itemName_ = args.get("itemName")
+        self.auxValue_ = args.get("auxValue")

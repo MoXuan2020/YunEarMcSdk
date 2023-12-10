@@ -7,11 +7,11 @@ class EntityMotionStopServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityMotionStopServerEvent, self).__init__(callback)
-        self.motionId = None
-        self.entityId = None
-        self.remove = None
+        self.motionId_ = None
+        self.entityId_ = None
+        self.remove_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId = args.get("motionId")
-        self.entityId = args.get("entityId")
-        self.remove = args.get("remove")
+        self.motionId_ = args.get("motionId")
+        self.entityId_ = args.get("entityId")
+        self.remove_ = args.get("remove")

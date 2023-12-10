@@ -7,13 +7,13 @@ class OnContainerFillLoottableServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnContainerFillLoottableServerEvent, self).__init__(callback)
-        self.loottable = None
-        self.playerId = None
-        self.itemList = None
-        self.dirty = None
+        self.loottable_ = None
+        self.playerId_ = None
+        self.itemList_ = None
+        self.dirty_ = None
 
     def CreateFromArgs(self, args):
-        self.loottable = args.get("loottable")
-        self.playerId = args.get("playerId")
-        self.itemList = args.get("itemList")
-        self.dirty = args.get("dirty")
+        self.loottable_ = args.get("loottable")
+        self.playerId_ = args.get("playerId")
+        self.itemList_ = args.get("itemList")
+        self.dirty_ = args.get("dirty")

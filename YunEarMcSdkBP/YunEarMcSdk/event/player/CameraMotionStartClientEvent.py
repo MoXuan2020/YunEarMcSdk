@@ -7,7 +7,7 @@ class CameraMotionStartClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(CameraMotionStartClientEvent, self).__init__(callback)
-        self.motionId = None
+        self.motionId_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId = args.get("motionId")
+        self.motionId_ = args.get("motionId")

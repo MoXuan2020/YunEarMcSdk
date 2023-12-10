@@ -7,9 +7,9 @@ class OnCommandOutputServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnCommandOutputServerEvent, self).__init__(callback)
-        self.command = None
-        self.message = None
+        self.command_ = None
+        self.message_ = None
 
     def CreateFromArgs(self, args):
-        self.command = args.get("command")
-        self.message = args.get("message")
+        self.command_ = args.get("command")
+        self.message_ = args.get("message")

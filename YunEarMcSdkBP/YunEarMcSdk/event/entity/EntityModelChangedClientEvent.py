@@ -7,11 +7,11 @@ class EntityModelChangedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(EntityModelChangedClientEvent, self).__init__(callback)
-        self.entityId = None
-        self.newModel = None
-        self.oldModel = None
+        self.entityId_ = None
+        self.newModel_ = None
+        self.oldModel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.newModel = args.get("newModel")
-        self.oldModel = args.get("oldModel")
+        self.entityId_ = args.get("entityId")
+        self.newModel_ = args.get("newModel")
+        self.oldModel_ = args.get("oldModel")

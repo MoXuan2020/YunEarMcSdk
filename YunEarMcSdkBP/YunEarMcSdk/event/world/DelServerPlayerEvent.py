@@ -7,11 +7,11 @@ class DelServerPlayerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(DelServerPlayerEvent, self).__init__(callback)
-        self.id = None
-        self.isTransfer = None
-        self.uid = None
+        self.id_ = None
+        self.isTransfer_ = None
+        self.uid_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.isTransfer = args.get("isTransfer")
-        self.uid = args.get("uid")
+        self.id_ = args.get("id")
+        self.isTransfer_ = args.get("isTransfer")
+        self.uid_ = args.get("uid")

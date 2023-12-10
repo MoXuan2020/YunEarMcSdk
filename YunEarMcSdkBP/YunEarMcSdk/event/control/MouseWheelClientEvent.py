@@ -7,7 +7,7 @@ class MouseWheelClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(MouseWheelClientEvent, self).__init__(callback)
-        self.direction = None
+        self.direction_ = None
 
     def CreateFromArgs(self, args):
-        self.direction = args.get("direction")
+        self.direction_ = args.get("direction")

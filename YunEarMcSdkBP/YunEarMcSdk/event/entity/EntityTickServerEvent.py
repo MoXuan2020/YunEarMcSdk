@@ -7,9 +7,9 @@ class EntityTickServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityTickServerEvent, self).__init__(callback)
-        self.entityId = None
-        self.identifier = None
+        self.entityId_ = None
+        self.identifier_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId = args.get("entityId")
-        self.identifier = args.get("identifier")
+        self.entityId_ = args.get("entityId")
+        self.identifier_ = args.get("identifier")

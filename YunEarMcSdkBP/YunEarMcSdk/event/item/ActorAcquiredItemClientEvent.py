@@ -7,13 +7,13 @@ class ActorAcquiredItemClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ActorAcquiredItemClientEvent, self).__init__(callback)
-        self.actor = None
-        self.secondaryActor = None
-        self.itemDict = None
-        self.acquireMethod = None
+        self.actor_ = None
+        self.secondaryActor_ = None
+        self.itemDict_ = None
+        self.acquireMethod_ = None
 
     def CreateFromArgs(self, args):
-        self.actor = args.get("actor")
-        self.secondaryActor = args.get("secondaryActor")
-        self.itemDict = args.get("itemDict")
-        self.acquireMethod = args.get("acquireMethod")
+        self.actor_ = args.get("actor")
+        self.secondaryActor_ = args.get("secondaryActor")
+        self.itemDict_ = args.get("itemDict")
+        self.acquireMethod_ = args.get("acquireMethod")

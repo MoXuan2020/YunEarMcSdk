@@ -7,7 +7,7 @@ class PushScreenEvent(ClientEvent):
 
     def __init__(self, callback):
         super(PushScreenEvent, self).__init__(callback)
-        self.screenName = None
+        self.screenName_ = None
 
     def CreateFromArgs(self, args):
-        self.screenName = args.get("screenName")
+        self.screenName_ = args.get("screenName")

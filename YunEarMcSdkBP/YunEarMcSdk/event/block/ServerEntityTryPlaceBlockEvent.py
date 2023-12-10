@@ -7,23 +7,23 @@ class ServerEntityTryPlaceBlockEvent(ServerEvent):
 
     def __init__(self, callback):
         super(ServerEntityTryPlaceBlockEvent, self).__init__(callback)
-        self.x = None
-        self.y = None
-        self.z = None
-        self.fullName = None
-        self.auxData = None
-        self.entityId = None
-        self.dimensionId = None
-        self.face = None
-        self.cancel = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
+        self.fullName_ = None
+        self.auxData_ = None
+        self.entityId_ = None
+        self.dimensionId_ = None
+        self.face_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
-        self.fullName = args.get("fullName")
-        self.auxData = args.get("auxData")
-        self.entityId = args.get("entityId")
-        self.dimensionId = args.get("dimensionId")
-        self.face = args.get("face")
-        self.cancel = args.get("cancel")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")
+        self.fullName_ = args.get("fullName")
+        self.auxData_ = args.get("auxData")
+        self.entityId_ = args.get("entityId")
+        self.dimensionId_ = args.get("dimensionId")
+        self.face_ = args.get("face")
+        self.cancel_ = args.get("cancel")

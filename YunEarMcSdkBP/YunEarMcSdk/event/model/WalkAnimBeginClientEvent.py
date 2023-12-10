@@ -7,7 +7,7 @@ class WalkAnimBeginClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(WalkAnimBeginClientEvent, self).__init__(callback)
-        self.id = None
+        self.id_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
+        self.id_ = args.get("id")

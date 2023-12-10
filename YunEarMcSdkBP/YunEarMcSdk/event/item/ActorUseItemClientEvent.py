@@ -7,11 +7,11 @@ class ActorUseItemClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ActorUseItemClientEvent, self).__init__(callback)
-        self.playerId = None
-        self.itemDict = None
-        self.useMethod = None
+        self.playerId_ = None
+        self.itemDict_ = None
+        self.useMethod_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.itemDict = args.get("itemDict")
-        self.useMethod = args.get("useMethod")
+        self.playerId_ = args.get("playerId")
+        self.itemDict_ = args.get("itemDict")
+        self.useMethod_ = args.get("useMethod")

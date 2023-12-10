@@ -7,11 +7,11 @@ class AddLevelEvent(ServerEvent):
 
     def __init__(self, callback):
         super(AddLevelEvent, self).__init__(callback)
-        self.id = None
-        self.addLevel = None
-        self.newLevel = None
+        self.id_ = None
+        self.addLevel_ = None
+        self.newLevel_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.addLevel = args.get("addLevel")
-        self.newLevel = args.get("newLevel")
+        self.id_ = args.get("id")
+        self.addLevel_ = args.get("addLevel")
+        self.newLevel_ = args.get("newLevel")

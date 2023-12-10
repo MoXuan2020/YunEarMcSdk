@@ -7,19 +7,19 @@ class ClientBlockUseEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ClientBlockUseEvent, self).__init__(callback)
-        self.playerId = None
-        self.blockName = None
-        self.aux = None
-        self.cancel = None
-        self.x = None
-        self.y = None
-        self.z = None
+        self.playerId_ = None
+        self.blockName_ = None
+        self.aux_ = None
+        self.cancel_ = None
+        self.x_ = None
+        self.y_ = None
+        self.z_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.blockName = args.get("blockName")
-        self.aux = args.get("aux")
-        self.cancel = args.get("cancel")
-        self.x = args.get("x")
-        self.y = args.get("y")
-        self.z = args.get("z")
+        self.playerId_ = args.get("playerId")
+        self.blockName_ = args.get("blockName")
+        self.aux_ = args.get("aux")
+        self.cancel_ = args.get("cancel")
+        self.x_ = args.get("x")
+        self.y_ = args.get("y")
+        self.z_ = args.get("z")

@@ -7,13 +7,13 @@ class ScreenSizeChangedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ScreenSizeChangedClientEvent, self).__init__(callback)
-        self.beforeX = None
-        self.beforeY = None
-        self.afterX = None
-        self.afterY = None
+        self.beforeX_ = None
+        self.beforeY_ = None
+        self.afterX_ = None
+        self.afterY_ = None
 
     def CreateFromArgs(self, args):
-        self.beforeX = args.get("beforeX")
-        self.beforeY = args.get("beforeY")
-        self.afterX = args.get("afterX")
-        self.afterY = args.get("afterY")
+        self.beforeX_ = args.get("beforeX")
+        self.beforeY_ = args.get("beforeY")
+        self.afterX_ = args.get("afterX")
+        self.afterY_ = args.get("afterY")

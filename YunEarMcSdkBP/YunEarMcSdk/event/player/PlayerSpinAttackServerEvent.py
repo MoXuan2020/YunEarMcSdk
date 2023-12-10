@@ -7,13 +7,13 @@ class PlayerSpinAttackServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerSpinAttackServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.isInWaterOrRain = None
-        self.isRiding = None
-        self.isStart = None
+        self.playerId_ = None
+        self.isInWaterOrRain_ = None
+        self.isRiding_ = None
+        self.isStart_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.isInWaterOrRain = args.get("isInWaterOrRain")
-        self.isRiding = args.get("isRiding")
-        self.isStart = args.get("isStart")
+        self.playerId_ = args.get("playerId")
+        self.isInWaterOrRain_ = args.get("isInWaterOrRain")
+        self.isRiding_ = args.get("isRiding")
+        self.isStart_ = args.get("isStart")

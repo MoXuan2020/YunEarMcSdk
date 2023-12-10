@@ -7,21 +7,21 @@ class FallingBlockReturnHeavyBlockServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(FallingBlockReturnHeavyBlockServerEvent, self).__init__(callback)
-        self.fallingBlockId = None
-        self.blockX = None
-        self.blockY = None
-        self.blockZ = None
-        self.heavyBlockName = None
-        self.prevHereBlockName = None
-        self.dimensionId = None
-        self.fallTickAmount = None
+        self.fallingBlockId_ = None
+        self.blockX_ = None
+        self.blockY_ = None
+        self.blockZ_ = None
+        self.heavyBlockName_ = None
+        self.prevHereBlockName_ = None
+        self.dimensionId_ = None
+        self.fallTickAmount_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId = args.get("fallingBlockId")
-        self.blockX = args.get("blockX")
-        self.blockY = args.get("blockY")
-        self.blockZ = args.get("blockZ")
-        self.heavyBlockName = args.get("heavyBlockName")
-        self.prevHereBlockName = args.get("prevHereBlockName")
-        self.dimensionId = args.get("dimensionId")
-        self.fallTickAmount = args.get("fallTickAmount")
+        self.fallingBlockId_ = args.get("fallingBlockId")
+        self.blockX_ = args.get("blockX")
+        self.blockY_ = args.get("blockY")
+        self.blockZ_ = args.get("blockZ")
+        self.heavyBlockName_ = args.get("heavyBlockName")
+        self.prevHereBlockName_ = args.get("prevHereBlockName")
+        self.dimensionId_ = args.get("dimensionId")
+        self.fallTickAmount_ = args.get("fallTickAmount")

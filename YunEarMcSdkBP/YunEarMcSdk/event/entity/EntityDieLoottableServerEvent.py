@@ -7,13 +7,13 @@ class EntityDieLoottableServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(EntityDieLoottableServerEvent, self).__init__(callback)
-        self.dieEntityId = None
-        self.attacker = None
-        self.itemList = None
-        self.dirty = None
+        self.dieEntityId_ = None
+        self.attacker_ = None
+        self.itemList_ = None
+        self.dirty_ = None
 
     def CreateFromArgs(self, args):
-        self.dieEntityId = args.get("dieEntityId")
-        self.attacker = args.get("attacker")
-        self.itemList = args.get("itemList")
-        self.dirty = args.get("dirty")
+        self.dieEntityId_ = args.get("dieEntityId")
+        self.attacker_ = args.get("attacker")
+        self.itemList_ = args.get("itemList")
+        self.dirty_ = args.get("dirty")

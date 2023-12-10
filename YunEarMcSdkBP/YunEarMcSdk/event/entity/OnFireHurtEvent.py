@@ -7,15 +7,15 @@ class OnFireHurtEvent(ServerEvent):
 
     def __init__(self, callback):
         super(OnFireHurtEvent, self).__init__(callback)
-        self.victim = None
-        self.src = None
-        self.fireTime = None
-        self.cancel = None
-        self.cancelIgnite = None
+        self.victim_ = None
+        self.src_ = None
+        self.fireTime_ = None
+        self.cancel_ = None
+        self.cancelIgnite_ = None
 
     def CreateFromArgs(self, args):
-        self.victim = args.get("victim")
-        self.src = args.get("src")
-        self.fireTime = args.get("fireTime")
-        self.cancel = args.get("cancel")
-        self.cancelIgnite = args.get("cancelIgnite")
+        self.victim_ = args.get("victim")
+        self.src_ = args.get("src")
+        self.fireTime_ = args.get("fireTime")
+        self.cancel_ = args.get("cancel")
+        self.cancelIgnite_ = args.get("cancelIgnite")

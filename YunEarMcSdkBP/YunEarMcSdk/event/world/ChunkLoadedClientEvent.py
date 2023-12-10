@@ -7,11 +7,11 @@ class ChunkLoadedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(ChunkLoadedClientEvent, self).__init__(callback)
-        self.dimension = None
-        self.chunkPosX = None
-        self.chunkPosZ = None
+        self.dimension_ = None
+        self.chunkPosX_ = None
+        self.chunkPosZ_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension = args.get("dimension")
-        self.chunkPosX = args.get("chunkPosX")
-        self.chunkPosZ = args.get("chunkPosZ")
+        self.dimension_ = args.get("dimension")
+        self.chunkPosX_ = args.get("chunkPosX")
+        self.chunkPosZ_ = args.get("chunkPosZ")

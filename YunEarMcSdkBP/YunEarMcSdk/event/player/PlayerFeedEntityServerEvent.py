@@ -7,13 +7,13 @@ class PlayerFeedEntityServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerFeedEntityServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.entityId = None
-        self.itemDict = None
-        self.cancel = None
+        self.playerId_ = None
+        self.entityId_ = None
+        self.itemDict_ = None
+        self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.entityId = args.get("entityId")
-        self.itemDict = args.get("itemDict")
-        self.cancel = args.get("cancel")
+        self.playerId_ = args.get("playerId")
+        self.entityId_ = args.get("entityId")
+        self.itemDict_ = args.get("itemDict")
+        self.cancel_ = args.get("cancel")

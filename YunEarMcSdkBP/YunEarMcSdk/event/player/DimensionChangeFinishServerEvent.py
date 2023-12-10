@@ -7,13 +7,13 @@ class DimensionChangeFinishServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(DimensionChangeFinishServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.fromDimensionId = None
-        self.toDimensionId = None
-        self.toPos = None
+        self.playerId_ = None
+        self.fromDimensionId_ = None
+        self.toDimensionId_ = None
+        self.toPos_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.fromDimensionId = args.get("fromDimensionId")
-        self.toDimensionId = args.get("toDimensionId")
-        self.toPos = args.get("toPos")
+        self.playerId_ = args.get("playerId")
+        self.fromDimensionId_ = args.get("fromDimensionId")
+        self.toDimensionId_ = args.get("toDimensionId")
+        self.toPos_ = args.get("toPos")

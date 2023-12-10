@@ -7,9 +7,9 @@ class PlayerInventoryOpenScriptServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerInventoryOpenScriptServerEvent, self).__init__(callback)
-        self.playerId = None
-        self.isCreative = None
+        self.playerId_ = None
+        self.isCreative_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId = args.get("playerId")
-        self.isCreative = args.get("isCreative")
+        self.playerId_ = args.get("playerId")
+        self.isCreative_ = args.get("isCreative")

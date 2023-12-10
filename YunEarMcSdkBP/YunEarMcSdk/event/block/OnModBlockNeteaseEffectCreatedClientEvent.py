@@ -7,13 +7,13 @@ class OnModBlockNeteaseEffectCreatedClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnModBlockNeteaseEffectCreatedClientEvent, self).__init__(callback)
-        self.effectName = None
-        self.id = None
-        self.effectType = None
-        self.blockPos = None
+        self.effectName_ = None
+        self.id_ = None
+        self.effectType_ = None
+        self.blockPos_ = None
 
     def CreateFromArgs(self, args):
-        self.effectName = args.get("effectName")
-        self.id = args.get("id")
-        self.effectType = args.get("effectType")
-        self.blockPos = args.get("blockPos")
+        self.effectName_ = args.get("effectName")
+        self.id_ = args.get("id")
+        self.effectType_ = args.get("effectType")
+        self.blockPos_ = args.get("blockPos")

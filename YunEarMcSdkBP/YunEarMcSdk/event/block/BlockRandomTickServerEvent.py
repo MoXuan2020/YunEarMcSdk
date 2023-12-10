@@ -7,19 +7,19 @@ class BlockRandomTickServerEvent(ServerEvent):
 
     def __init__(self, callback):
         super(BlockRandomTickServerEvent, self).__init__(callback)
-        self.posX = None
-        self.posY = None
-        self.posZ = None
-        self.blockName = None
-        self.fullName = None
-        self.auxValue = None
-        self.dimensionId = None
+        self.posX_ = None
+        self.posY_ = None
+        self.posZ_ = None
+        self.blockName_ = None
+        self.fullName_ = None
+        self.auxValue_ = None
+        self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.posX = args.get("posX")
-        self.posY = args.get("posY")
-        self.posZ = args.get("posZ")
-        self.blockName = args.get("blockName")
-        self.fullName = args.get("fullName")
-        self.auxValue = args.get("auxValue")
-        self.dimensionId = args.get("dimensionId")
+        self.posX_ = args.get("posX")
+        self.posY_ = args.get("posY")
+        self.posZ_ = args.get("posZ")
+        self.blockName_ = args.get("blockName")
+        self.fullName_ = args.get("fullName")
+        self.auxValue_ = args.get("auxValue")
+        self.dimensionId_ = args.get("dimensionId")

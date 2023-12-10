@@ -7,9 +7,9 @@ class CameraMotionStopClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(CameraMotionStopClientEvent, self).__init__(callback)
-        self.motionId = None
-        self.remove = None
+        self.motionId_ = None
+        self.remove_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId = args.get("motionId")
-        self.remove = args.get("remove")
+        self.motionId_ = args.get("motionId")
+        self.remove_ = args.get("remove")

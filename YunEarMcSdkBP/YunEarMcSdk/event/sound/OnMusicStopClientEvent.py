@@ -7,7 +7,7 @@ class OnMusicStopClientEvent(ClientEvent):
 
     def __init__(self, callback):
         super(OnMusicStopClientEvent, self).__init__(callback)
-        self.musicName = None
+        self.musicName_ = None
 
     def CreateFromArgs(self, args):
-        self.musicName = args.get("musicName")
+        self.musicName_ = args.get("musicName")

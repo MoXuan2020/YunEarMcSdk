@@ -7,9 +7,9 @@ class PlayerDieEvent(ServerEvent):
 
     def __init__(self, callback):
         super(PlayerDieEvent, self).__init__(callback)
-        self.id = None
-        self.attacker = None
+        self.id_ = None
+        self.attacker_ = None
 
     def CreateFromArgs(self, args):
-        self.id = args.get("id")
-        self.attacker = args.get("attacker")
+        self.id_ = args.get("id")
+        self.attacker_ = args.get("attacker")
