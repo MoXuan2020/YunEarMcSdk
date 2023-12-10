@@ -19,13 +19,13 @@ class ServerSpawnMobEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.identifier_ = args.get("identifier")
-        self.type_ = args.get("type")
-        self.baby_ = args.get("baby")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.dimensionId_ = args.get("dimensionId")
-        self.realIdentifier_ = args.get("realIdentifier")
-        self.cancel_ = args.get("cancel")
+        self.entityId_ = args["entityId"]
+        self.identifier_ = args["identifier"]
+        self.type_ = args["type"]
+        self.baby_ = args["baby"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.dimensionId_ = args["dimensionId"]
+        self.realIdentifier_ = args["realIdentifier"]
+        self.cancel_ = args["cancel"]

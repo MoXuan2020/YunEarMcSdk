@@ -21,15 +21,15 @@ class ProjectileDoHitEffectEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.hitTargetType_ = args.get("hitTargetType")
-        self.targetId_ = args.get("targetId")
-        self.hitFace_ = args.get("hitFace")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.blockPosX_ = args.get("blockPosX")
-        self.blockPosY_ = args.get("blockPosY")
-        self.blockPosZ_ = args.get("blockPosZ")
-        self.srcId_ = args.get("srcId")
-        self.cancel_ = args.get("cancel")
+        self.id_ = args["id"]
+        self.hitTargetType_ = args["hitTargetType"]
+        self.targetId_ = args["targetId"]
+        self.hitFace_ = args["hitFace"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.blockPosX_ = args["blockPosX"]
+        self.blockPosY_ = args["blockPosY"]
+        self.blockPosZ_ = args["blockPosZ"]
+        self.srcId_ = args["srcId"]
+        self.cancel_ = args["cancel"]

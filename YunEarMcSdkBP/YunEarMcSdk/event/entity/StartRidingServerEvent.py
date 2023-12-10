@@ -12,6 +12,6 @@ class StartRidingServerEvent(ServerEvent):
         self.victimId_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.actorId_ = args.get("actorId")
-        self.victimId_ = args.get("victimId")
+        self.cancel_ = args["cancel"]
+        self.actorId_ = args["actorId"]
+        self.victimId_ = args["victimId"]

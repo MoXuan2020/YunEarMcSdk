@@ -14,8 +14,8 @@ class ModBlockEntityLoadedClientEvent(ClientEvent):
         self.blockName_ = None
 
     def CreateFromArgs(self, args):
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.dimensionId_ = args.get("dimensionId")
-        self.blockName_ = args.get("blockName")
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.dimensionId_ = args["dimensionId"]
+        self.blockName_ = args["blockName"]

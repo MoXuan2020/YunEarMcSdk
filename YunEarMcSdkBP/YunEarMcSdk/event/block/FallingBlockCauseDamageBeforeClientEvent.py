@@ -20,14 +20,14 @@ class FallingBlockCauseDamageBeforeClientEvent(ClientEvent):
         self.fallDamage_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId_ = args.get("fallingBlockId")
-        self.fallingBlockX_ = args.get("fallingBlockX")
-        self.fallingBlockY_ = args.get("fallingBlockY")
-        self.fallingBlockZ_ = args.get("fallingBlockZ")
-        self.blockName_ = args.get("blockName")
-        self.dimensionId_ = args.get("dimensionId")
-        self.collidingEntitys_ = args.get("collidingEntitys")
-        self.fallTickAmount_ = args.get("fallTickAmount")
-        self.fallDistance_ = args.get("fallDistance")
-        self.isHarmful_ = args.get("isHarmful")
-        self.fallDamage_ = args.get("fallDamage")
+        self.fallingBlockId_ = args["fallingBlockId"]
+        self.fallingBlockX_ = args["fallingBlockX"]
+        self.fallingBlockY_ = args["fallingBlockY"]
+        self.fallingBlockZ_ = args["fallingBlockZ"]
+        self.blockName_ = args["blockName"]
+        self.dimensionId_ = args["dimensionId"]
+        self.collidingEntitys_ = args["collidingEntitys"]
+        self.fallTickAmount_ = args["fallTickAmount"]
+        self.fallDistance_ = args["fallDistance"]
+        self.isHarmful_ = args["isHarmful"]
+        self.fallDamage_ = args["fallDamage"]

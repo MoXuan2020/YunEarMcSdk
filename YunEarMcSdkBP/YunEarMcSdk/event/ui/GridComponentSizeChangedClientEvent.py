@@ -10,4 +10,4 @@ class GridComponentSizeChangedClientEvent(ClientEvent):
         self.path_ = None
 
     def CreateFromArgs(self, args):
-        self.path_ = args.get("path")
+        self.path_ = args["path"]

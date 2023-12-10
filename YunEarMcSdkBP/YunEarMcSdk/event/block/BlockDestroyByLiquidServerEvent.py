@@ -15,9 +15,9 @@ class BlockDestroyByLiquidServerEvent(ServerEvent):
         self.auxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.liquidName_ = args.get("liquidName")
-        self.blockName_ = args.get("blockName")
-        self.auxValue_ = args.get("auxValue")
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.liquidName_ = args["liquidName"]
+        self.blockName_ = args["blockName"]
+        self.auxValue_ = args["auxValue"]

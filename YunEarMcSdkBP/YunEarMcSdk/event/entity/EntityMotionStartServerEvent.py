@@ -11,5 +11,5 @@ class EntityMotionStartServerEvent(ServerEvent):
         self.entityId_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId_ = args.get("motionId")
-        self.entityId_ = args.get("entityId")
+        self.motionId_ = args["motionId"]
+        self.entityId_ = args["entityId"]

@@ -12,6 +12,6 @@ class SpawnProjectileServerEvent(ServerEvent):
         self.spawnerId_ = None
 
     def CreateFromArgs(self, args):
-        self.projectileId_ = args.get("projectileId")
-        self.projectileIdentifier_ = args.get("projectileIdentifier")
-        self.spawnerId_ = args.get("spawnerId")
+        self.projectileId_ = args["projectileId"]
+        self.projectileIdentifier_ = args["projectileIdentifier"]
+        self.spawnerId_ = args["spawnerId"]

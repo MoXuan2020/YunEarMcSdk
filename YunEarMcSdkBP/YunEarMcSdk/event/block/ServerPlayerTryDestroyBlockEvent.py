@@ -19,13 +19,13 @@ class ServerPlayerTryDestroyBlockEvent(ServerEvent):
         self.spawnResources_ = None
 
     def CreateFromArgs(self, args):
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.face_ = args.get("face")
-        self.fullName_ = args.get("fullName")
-        self.auxData_ = args.get("auxData")
-        self.playerId_ = args.get("playerId")
-        self.dimensionId_ = args.get("dimensionId")
-        self.cancel_ = args.get("cancel")
-        self.spawnResources_ = args.get("spawnResources")
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.face_ = args["face"]
+        self.fullName_ = args["fullName"]
+        self.auxData_ = args["auxData"]
+        self.playerId_ = args["playerId"]
+        self.dimensionId_ = args["dimensionId"]
+        self.cancel_ = args["cancel"]
+        self.spawnResources_ = args["spawnResources"]

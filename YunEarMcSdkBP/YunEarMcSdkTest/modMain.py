@@ -10,6 +10,5 @@ class YunEarMcSdkTest(object):
     @HealthChangeBeforeServerEvent
     def HealthChangeBeforeServerEvent(self, event):
         # type: (HealthChangeBeforeServerEvent) -> None
-        print event.__dict__
         if event.from_ > event.to_:
             event.cancel_ = True

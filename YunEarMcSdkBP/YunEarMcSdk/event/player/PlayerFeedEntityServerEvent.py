@@ -13,7 +13,7 @@ class PlayerFeedEntityServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.entityId_ = args.get("entityId")
-        self.itemDict_ = args.get("itemDict")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.entityId_ = args["entityId"]
+        self.itemDict_ = args["itemDict"]
+        self.cancel_ = args["cancel"]

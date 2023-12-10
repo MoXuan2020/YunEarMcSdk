@@ -16,10 +16,10 @@ class OnBeforeFallOnBlockServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.blockName_ = args.get("blockName")
-        self.fallDistance_ = args.get("fallDistance")
-        self.cancel_ = args.get("cancel")
+        self.entityId_ = args["entityId"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.blockName_ = args["blockName"]
+        self.fallDistance_ = args["fallDistance"]
+        self.cancel_ = args["cancel"]

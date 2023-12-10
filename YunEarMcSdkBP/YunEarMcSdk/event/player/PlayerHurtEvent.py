@@ -11,5 +11,5 @@ class PlayerHurtEvent(ServerEvent):
         self.attacker_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.attacker_ = args.get("attacker")
+        self.id_ = args["id"]
+        self.attacker_ = args["attacker"]

@@ -10,4 +10,4 @@ class ClientShapedRecipeTriggeredEvent(ClientEvent):
         self.recipeId_ = None
 
     def CreateFromArgs(self, args):
-        self.recipeId_ = args.get("recipeId")
+        self.recipeId_ = args["recipeId"]

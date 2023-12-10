@@ -12,6 +12,6 @@ class OnKeyboardControllerLayoutChangeClientEvent(ClientEvent):
         self.oldKey_ = None
 
     def CreateFromArgs(self, args):
-        self.action_ = args.get("action")
-        self.newKey_ = args.get("newKey")
-        self.oldKey_ = args.get("oldKey")
+        self.action_ = args["action"]
+        self.newKey_ = args["newKey"]
+        self.oldKey_ = args["oldKey"]

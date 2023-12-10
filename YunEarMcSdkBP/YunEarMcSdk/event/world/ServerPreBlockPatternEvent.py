@@ -15,9 +15,9 @@ class ServerPreBlockPatternEvent(ServerEvent):
         self.entityWillBeGenerated_ = None
 
     def CreateFromArgs(self, args):
-        self.enable_ = args.get("enable")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.dimensionId_ = args.get("dimensionId")
-        self.entityWillBeGenerated_ = args.get("entityWillBeGenerated")
+        self.enable_ = args["enable"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.dimensionId_ = args["dimensionId"]
+        self.entityWillBeGenerated_ = args["entityWillBeGenerated"]

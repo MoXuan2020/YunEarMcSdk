@@ -13,7 +13,7 @@ class OnModBlockNeteaseEffectCreatedClientEvent(ClientEvent):
         self.blockPos_ = None
 
     def CreateFromArgs(self, args):
-        self.effectName_ = args.get("effectName")
-        self.id_ = args.get("id")
-        self.effectType_ = args.get("effectType")
-        self.blockPos_ = args.get("blockPos")
+        self.effectName_ = args["effectName"]
+        self.id_ = args["id"]
+        self.effectType_ = args["effectType"]
+        self.blockPos_ = args["blockPos"]

@@ -12,6 +12,6 @@ class EntityDroppedItemServerEvent(ServerEvent):
         self.itemEntityId_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.itemDict_ = args.get("itemDict")
-        self.itemEntityId_ = args.get("itemEntityId")
+        self.entityId_ = args["entityId"]
+        self.itemDict_ = args["itemDict"]
+        self.itemEntityId_ = args["itemEntityId"]

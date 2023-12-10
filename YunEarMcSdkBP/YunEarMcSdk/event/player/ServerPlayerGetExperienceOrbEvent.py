@@ -12,6 +12,6 @@ class ServerPlayerGetExperienceOrbEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.experienceValue_ = args.get("experienceValue")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.experienceValue_ = args["experienceValue"]
+        self.cancel_ = args["cancel"]

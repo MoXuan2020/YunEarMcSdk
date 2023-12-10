@@ -13,7 +13,7 @@ class RemoveEffectServerEvent(ServerEvent):
         self.effectAmplifier_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.effectName_ = args.get("effectName")
-        self.effectDuration_ = args.get("effectDuration")
-        self.effectAmplifier_ = args.get("effectAmplifier")
+        self.entityId_ = args["entityId"]
+        self.effectName_ = args["effectName"]
+        self.effectDuration_ = args["effectDuration"]
+        self.effectAmplifier_ = args["effectAmplifier"]

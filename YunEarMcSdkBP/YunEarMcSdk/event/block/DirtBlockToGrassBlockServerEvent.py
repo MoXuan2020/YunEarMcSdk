@@ -13,7 +13,7 @@ class DirtBlockToGrassBlockServerEvent(ServerEvent):
         self.z_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension_ = args.get("dimension")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
+        self.dimension_ = args["dimension"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]

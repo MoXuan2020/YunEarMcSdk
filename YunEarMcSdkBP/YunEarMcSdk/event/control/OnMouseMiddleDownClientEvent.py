@@ -12,6 +12,6 @@ class OnMouseMiddleDownClientEvent(ClientEvent):
         self.mousePositionY_ = None
 
     def CreateFromArgs(self, args):
-        self.isDown_ = args.get("isDown")
-        self.mousePositionX_ = args.get("mousePositionX")
-        self.mousePositionY_ = args.get("mousePositionY")
+        self.isDown_ = args["isDown"]
+        self.mousePositionX_ = args["mousePositionX"]
+        self.mousePositionY_ = args["mousePositionY"]

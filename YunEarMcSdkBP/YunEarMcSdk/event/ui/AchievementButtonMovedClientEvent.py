@@ -11,5 +11,5 @@ class AchievementButtonMovedClientEvent(ClientEvent):
         self.newPosition_ = None
 
     def CreateFromArgs(self, args):
-        self.oldPosition_ = args.get("oldPosition")
-        self.newPosition_ = args.get("newPosition")
+        self.oldPosition_ = args["oldPosition"]
+        self.newPosition_ = args["newPosition"]

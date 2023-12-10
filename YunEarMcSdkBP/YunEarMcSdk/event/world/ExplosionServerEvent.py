@@ -14,8 +14,8 @@ class ExplosionServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.blocks_ = args.get("blocks")
-        self.victims_ = args.get("victims")
-        self.sourceId_ = args.get("sourceId")
-        self.explodePos_ = args.get("explodePos")
-        self.dimensionId_ = args.get("dimensionId")
+        self.blocks_ = args["blocks"]
+        self.victims_ = args["victims"]
+        self.sourceId_ = args["sourceId"]
+        self.explodePos_ = args["explodePos"]
+        self.dimensionId_ = args["dimensionId"]

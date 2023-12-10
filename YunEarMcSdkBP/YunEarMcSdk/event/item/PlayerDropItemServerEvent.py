@@ -11,5 +11,5 @@ class PlayerDropItemServerEvent(ServerEvent):
         self.itemEntityId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemEntityId_ = args.get("itemEntityId")
+        self.playerId_ = args["playerId"]
+        self.itemEntityId_ = args["itemEntityId"]

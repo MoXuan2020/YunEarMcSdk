@@ -12,6 +12,6 @@ class NewOnEntityAreaEvent(ServerEvent):
         self.leftEntities_ = None
 
     def CreateFromArgs(self, args):
-        self.name_ = args.get("name")
-        self.enteredEntities_ = args.get("enteredEntities")
-        self.leftEntities_ = args.get("leftEntities")
+        self.name_ = args["name"]
+        self.enteredEntities_ = args["enteredEntities"]
+        self.leftEntities_ = args["leftEntities"]

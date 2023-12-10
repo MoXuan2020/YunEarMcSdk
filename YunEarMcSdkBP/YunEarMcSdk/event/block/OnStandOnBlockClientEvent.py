@@ -22,16 +22,16 @@ class OnStandOnBlockClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.dimensionId_ = args.get("dimensionId")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.motionX_ = args.get("motionX")
-        self.motionY_ = args.get("motionY")
-        self.motionZ_ = args.get("motionZ")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.blockName_ = args.get("blockName")
-        self.cancel_ = args.get("cancel")
+        self.entityId_ = args["entityId"]
+        self.dimensionId_ = args["dimensionId"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.motionX_ = args["motionX"]
+        self.motionY_ = args["motionY"]
+        self.motionZ_ = args["motionZ"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.blockName_ = args["blockName"]
+        self.cancel_ = args["cancel"]

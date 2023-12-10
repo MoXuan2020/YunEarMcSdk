@@ -14,8 +14,8 @@ class AnvilCreateResultItemAfterClientEvent(ClientEvent):
         self.materialItemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemShowName_ = args.get("itemShowName")
-        self.itemDict_ = args.get("itemDict")
-        self.oldItemDict_ = args.get("oldItemDict")
-        self.materialItemDict_ = args.get("materialItemDict")
+        self.playerId_ = args["playerId"]
+        self.itemShowName_ = args["itemShowName"]
+        self.itemDict_ = args["itemDict"]
+        self.oldItemDict_ = args["oldItemDict"]
+        self.materialItemDict_ = args["materialItemDict"]

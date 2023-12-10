@@ -11,5 +11,5 @@ class PerspChangeClientEvent(ClientEvent):
         self.to_ = None
 
     def CreateFromArgs(self, args):
-        self.from_ = args.get("from")
-        self.to_ = args.get("to")
+        self.from_ = args["from"]
+        self.to_ = args["to"]

@@ -10,4 +10,4 @@ class PopScreenAfterClientEvent(ClientEvent):
         self.screenName_ = None
 
     def CreateFromArgs(self, args):
-        self.screenName_ = args.get("screenName")
+        self.screenName_ = args["screenName"]

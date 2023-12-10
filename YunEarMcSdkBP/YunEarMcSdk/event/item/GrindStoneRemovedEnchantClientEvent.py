@@ -14,8 +14,8 @@ class GrindStoneRemovedEnchantClientEvent(ClientEvent):
         self.exp_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.oldItemDict_ = args.get("oldItemDict")
-        self.additionalItemDict_ = args.get("additionalItemDict")
-        self.newItemDict_ = args.get("newItemDict")
-        self.exp_ = args.get("exp")
+        self.playerId_ = args["playerId"]
+        self.oldItemDict_ = args["oldItemDict"]
+        self.additionalItemDict_ = args["additionalItemDict"]
+        self.newItemDict_ = args["newItemDict"]
+        self.exp_ = args["exp"]

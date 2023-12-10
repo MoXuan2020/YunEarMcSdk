@@ -10,4 +10,4 @@ class OnCarriedNewItemChangedClientEvent(ClientEvent):
         self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.itemDict_ = args.get("itemDict")
+        self.itemDict_ = args["itemDict"]

@@ -14,8 +14,8 @@ class OnFireHurtEvent(ServerEvent):
         self.cancelIgnite_ = None
 
     def CreateFromArgs(self, args):
-        self.victim_ = args.get("victim")
-        self.src_ = args.get("src")
-        self.fireTime_ = args.get("fireTime")
-        self.cancel_ = args.get("cancel")
-        self.cancelIgnite_ = args.get("cancelIgnite")
+        self.victim_ = args["victim"]
+        self.src_ = args["src"]
+        self.fireTime_ = args["fireTime"]
+        self.cancel_ = args["cancel"]
+        self.cancelIgnite_ = args["cancelIgnite"]

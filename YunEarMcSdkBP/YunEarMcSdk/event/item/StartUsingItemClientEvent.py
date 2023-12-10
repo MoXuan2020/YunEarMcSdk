@@ -11,5 +11,5 @@ class StartUsingItemClientEvent(ClientEvent):
         self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]

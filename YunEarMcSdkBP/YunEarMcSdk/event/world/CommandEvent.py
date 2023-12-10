@@ -12,6 +12,6 @@ class CommandEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.command_ = args.get("command")
-        self.cancel_ = args.get("cancel")
+        self.entityId_ = args["entityId"]
+        self.command_ = args["command"]
+        self.cancel_ = args["cancel"]

@@ -12,6 +12,6 @@ class EntityModelChangedClientEvent(ClientEvent):
         self.oldModel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.newModel_ = args.get("newModel")
-        self.oldModel_ = args.get("oldModel")
+        self.entityId_ = args["entityId"]
+        self.newModel_ = args["newModel"]
+        self.oldModel_ = args["oldModel"]

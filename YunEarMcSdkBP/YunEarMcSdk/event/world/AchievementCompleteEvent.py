@@ -14,8 +14,8 @@ class AchievementCompleteEvent(ServerEvent):
         self.description_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.rootNodeId_ = args.get("rootNodeId")
-        self.achievementId_ = args.get("achievementId")
-        self.title_ = args.get("title")
-        self.description_ = args.get("description")
+        self.playerId_ = args["playerId"]
+        self.rootNodeId_ = args["rootNodeId"]
+        self.achievementId_ = args["achievementId"]
+        self.title_ = args["title"]
+        self.description_ = args["description"]

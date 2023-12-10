@@ -15,9 +15,9 @@ class OnPlayerHitBlockClientEvent(ClientEvent):
         self.auxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.blockId_ = args.get("blockId")
-        self.auxValue_ = args.get("auxValue")
+        self.playerId_ = args["playerId"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.blockId_ = args["blockId"]
+        self.auxValue_ = args["auxValue"]

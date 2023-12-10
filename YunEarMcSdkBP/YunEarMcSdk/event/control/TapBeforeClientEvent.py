@@ -10,4 +10,4 @@ class TapBeforeClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
+        self.cancel_ = args["cancel"]

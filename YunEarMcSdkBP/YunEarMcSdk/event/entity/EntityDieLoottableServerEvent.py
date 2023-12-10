@@ -13,7 +13,7 @@ class EntityDieLoottableServerEvent(ServerEvent):
         self.dirty_ = None
 
     def CreateFromArgs(self, args):
-        self.dieEntityId_ = args.get("dieEntityId")
-        self.attacker_ = args.get("attacker")
-        self.itemList_ = args.get("itemList")
-        self.dirty_ = args.get("dirty")
+        self.dieEntityId_ = args["dieEntityId"]
+        self.attacker_ = args["attacker"]
+        self.itemList_ = args["itemList"]
+        self.dirty_ = args["dirty"]

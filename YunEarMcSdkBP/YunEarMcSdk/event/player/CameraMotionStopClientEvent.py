@@ -11,5 +11,5 @@ class CameraMotionStopClientEvent(ClientEvent):
         self.remove_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId_ = args.get("motionId")
-        self.remove_ = args.get("remove")
+        self.motionId_ = args["motionId"]
+        self.remove_ = args["remove"]

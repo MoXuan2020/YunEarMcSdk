@@ -15,9 +15,9 @@ class StartDestroyBlockServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.pos_ = args.get("pos")
-        self.blockName_ = args.get("blockName")
-        self.auxValue_ = args.get("auxValue")
-        self.playerId_ = args.get("playerId")
-        self.dimensionId_ = args.get("dimensionId")
-        self.cancel_ = args.get("cancel")
+        self.pos_ = args["pos"]
+        self.blockName_ = args["blockName"]
+        self.auxValue_ = args["auxValue"]
+        self.playerId_ = args["playerId"]
+        self.dimensionId_ = args["dimensionId"]
+        self.cancel_ = args["cancel"]

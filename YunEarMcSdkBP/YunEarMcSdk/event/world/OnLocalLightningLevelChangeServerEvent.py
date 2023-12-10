@@ -12,6 +12,6 @@ class OnLocalLightningLevelChangeServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.oldLevel_ = args.get("oldLevel")
-        self.newLevel_ = args.get("newLevel")
-        self.dimensionId_ = args.get("dimensionId")
+        self.oldLevel_ = args["oldLevel"]
+        self.newLevel_ = args["newLevel"]
+        self.dimensionId_ = args["dimensionId"]

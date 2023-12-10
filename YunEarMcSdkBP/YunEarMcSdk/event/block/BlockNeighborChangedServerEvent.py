@@ -22,16 +22,16 @@ class BlockNeighborChangedServerEvent(ServerEvent):
         self.toAuxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.dimensionId_ = args.get("dimensionId")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.blockName_ = args.get("blockName")
-        self.auxValue_ = args.get("auxValue")
-        self.neighborPosX_ = args.get("neighborPosX")
-        self.neighborPosY_ = args.get("neighborPosY")
-        self.neighborPosZ_ = args.get("neighborPosZ")
-        self.fromBlockName_ = args.get("fromBlockName")
-        self.fromBlockAuxValue_ = args.get("fromBlockAuxValue")
-        self.toBlockName_ = args.get("toBlockName")
-        self.toAuxValue_ = args.get("toAuxValue")
+        self.dimensionId_ = args["dimensionId"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.blockName_ = args["blockName"]
+        self.auxValue_ = args["auxValue"]
+        self.neighborPosX_ = args["neighborPosX"]
+        self.neighborPosY_ = args["neighborPosY"]
+        self.neighborPosZ_ = args["neighborPosZ"]
+        self.fromBlockName_ = args["fromBlockName"]
+        self.fromBlockAuxValue_ = args["fromBlockAuxValue"]
+        self.toBlockName_ = args["toBlockName"]
+        self.toAuxValue_ = args["toAuxValue"]

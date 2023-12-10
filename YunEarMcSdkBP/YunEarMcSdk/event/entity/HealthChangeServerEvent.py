@@ -13,7 +13,7 @@ class HealthChangeServerEvent(ServerEvent):
         self.byScript_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.from_ = args.get("from")
-        self.to_ = args.get("to")
-        self.byScript_ = args.get("byScript")
+        self.entityId_ = args["entityId"]
+        self.from_ = args["from"]
+        self.to_ = args["to"]
+        self.byScript_ = args["byScript"]

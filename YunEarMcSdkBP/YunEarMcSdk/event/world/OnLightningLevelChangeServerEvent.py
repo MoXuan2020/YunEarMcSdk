@@ -11,5 +11,5 @@ class OnLightningLevelChangeServerEvent(ServerEvent):
         self.newLevel_ = None
 
     def CreateFromArgs(self, args):
-        self.oldLevel_ = args.get("oldLevel")
-        self.newLevel_ = args.get("newLevel")
+        self.oldLevel_ = args["oldLevel"]
+        self.newLevel_ = args["newLevel"]

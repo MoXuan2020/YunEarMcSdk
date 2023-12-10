@@ -11,5 +11,5 @@ class StartRidingClientEvent(ClientEvent):
         self.victimId_ = None
 
     def CreateFromArgs(self, args):
-        self.actorId_ = args.get("actorId")
-        self.victimId_ = args.get("victimId")
+        self.actorId_ = args["actorId"]
+        self.victimId_ = args["victimId"]

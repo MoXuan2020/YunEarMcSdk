@@ -15,9 +15,9 @@ class EntityStopRidingEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.rideId_ = args.get("rideId")
-        self.exitFromRider_ = args.get("exitFromRider")
-        self.entityIsBeingDestroyed_ = args.get("entityIsBeingDestroyed")
-        self.switchingRides_ = args.get("switchingRides")
-        self.cancel_ = args.get("cancel")
+        self.id_ = args["id"]
+        self.rideId_ = args["rideId"]
+        self.exitFromRider_ = args["exitFromRider"]
+        self.entityIsBeingDestroyed_ = args["entityIsBeingDestroyed"]
+        self.switchingRides_ = args["switchingRides"]
+        self.cancel_ = args["cancel"]

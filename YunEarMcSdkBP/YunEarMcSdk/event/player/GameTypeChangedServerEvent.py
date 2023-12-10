@@ -12,6 +12,6 @@ class GameTypeChangedServerEvent(ServerEvent):
         self.newGameType_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.oldGameType_ = args.get("oldGameType")
-        self.newGameType_ = args.get("newGameType")
+        self.playerId_ = args["playerId"]
+        self.oldGameType_ = args["oldGameType"]
+        self.newGameType_ = args["newGameType"]

@@ -15,9 +15,9 @@ class ContainerItemChangedServerEvent(ServerEvent):
         self.newItemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.pos_ = args.get("pos")
-        self.containerType_ = args.get("containerType")
-        self.slot_ = args.get("slot")
-        self.dimensionId_ = args.get("dimensionId")
-        self.oldItemDict_ = args.get("oldItemDict")
-        self.newItemDict_ = args.get("newItemDict")
+        self.pos_ = args["pos"]
+        self.containerType_ = args["containerType"]
+        self.slot_ = args["slot"]
+        self.dimensionId_ = args["dimensionId"]
+        self.oldItemDict_ = args["oldItemDict"]
+        self.newItemDict_ = args["newItemDict"]

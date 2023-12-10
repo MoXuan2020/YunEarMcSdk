@@ -12,6 +12,6 @@ class DelServerPlayerEvent(ServerEvent):
         self.uid_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.isTransfer_ = args.get("isTransfer")
-        self.uid_ = args.get("uid")
+        self.id_ = args["id"]
+        self.isTransfer_ = args["isTransfer"]
+        self.uid_ = args["uid"]

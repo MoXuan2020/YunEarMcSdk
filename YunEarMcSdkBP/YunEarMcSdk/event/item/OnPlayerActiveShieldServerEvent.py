@@ -14,8 +14,8 @@ class OnPlayerActiveShieldServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.isActive_ = args.get("isActive")
-        self.itemDict_ = args.get("itemDict")
-        self.cancelable_ = args.get("cancelable")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.isActive_ = args["isActive"]
+        self.itemDict_ = args["itemDict"]
+        self.cancelable_ = args["cancelable"]
+        self.cancel_ = args["cancel"]

@@ -13,7 +13,7 @@ class OnNewArmorExchangeServerEvent(ServerEvent):
         self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.slot_ = args.get("slot")
-        self.oldArmorDict_ = args.get("oldArmorDict")
-        self.newArmorDict_ = args.get("newArmorDict")
-        self.playerId_ = args.get("playerId")
+        self.slot_ = args["slot"]
+        self.oldArmorDict_ = args["oldArmorDict"]
+        self.newArmorDict_ = args["newArmorDict"]
+        self.playerId_ = args["playerId"]

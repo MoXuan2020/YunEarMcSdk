@@ -13,7 +13,7 @@ class ScreenSizeChangedClientEvent(ClientEvent):
         self.afterY_ = None
 
     def CreateFromArgs(self, args):
-        self.beforeX_ = args.get("beforeX")
-        self.beforeY_ = args.get("beforeY")
-        self.afterX_ = args.get("afterX")
-        self.afterY_ = args.get("afterY")
+        self.beforeX_ = args["beforeX"]
+        self.beforeY_ = args["beforeY"]
+        self.afterX_ = args["afterX"]
+        self.afterY_ = args["afterY"]

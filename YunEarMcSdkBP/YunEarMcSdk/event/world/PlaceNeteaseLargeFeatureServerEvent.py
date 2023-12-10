@@ -16,10 +16,10 @@ class PlaceNeteaseLargeFeatureServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.dimensionId_ = args.get("dimensionId")
-        self.pos_ = args.get("pos")
-        self.rot_ = args.get("rot")
-        self.depth_ = args.get("depth")
-        self.centerPool_ = args.get("centerPool")
-        self.ignoreFitInContext_ = args.get("ignoreFitInContext")
-        self.cancel_ = args.get("cancel")
+        self.dimensionId_ = args["dimensionId"]
+        self.pos_ = args["pos"]
+        self.rot_ = args["rot"]
+        self.depth_ = args["depth"]
+        self.centerPool_ = args["centerPool"]
+        self.ignoreFitInContext_ = args["ignoreFitInContext"]
+        self.cancel_ = args["cancel"]

@@ -18,12 +18,12 @@ class OnAfterFallOnBlockClientEvent(ClientEvent):
         self.calculate_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.motionX_ = args.get("motionX")
-        self.motionY_ = args.get("motionY")
-        self.motionZ_ = args.get("motionZ")
-        self.blockName_ = args.get("blockName")
-        self.calculate_ = args.get("calculate")
+        self.entityId_ = args["entityId"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.motionX_ = args["motionX"]
+        self.motionY_ = args["motionY"]
+        self.motionZ_ = args["motionZ"]
+        self.blockName_ = args["blockName"]
+        self.calculate_ = args["calculate"]

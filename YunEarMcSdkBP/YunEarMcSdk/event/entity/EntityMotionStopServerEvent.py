@@ -12,6 +12,6 @@ class EntityMotionStopServerEvent(ServerEvent):
         self.remove_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId_ = args.get("motionId")
-        self.entityId_ = args.get("entityId")
-        self.remove_ = args.get("remove")
+        self.motionId_ = args["motionId"]
+        self.entityId_ = args["entityId"]
+        self.remove_ = args["remove"]

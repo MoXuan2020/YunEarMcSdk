@@ -11,5 +11,5 @@ class PlayerCheatSpinAttackServerEvent(ServerEvent):
         self.isStart_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.isStart_ = args.get("isStart")
+        self.playerId_ = args["playerId"]
+        self.isStart_ = args["isStart"]

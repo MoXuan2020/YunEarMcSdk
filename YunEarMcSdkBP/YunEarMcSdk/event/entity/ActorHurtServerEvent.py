@@ -14,8 +14,8 @@ class ActorHurtServerEvent(ServerEvent):
         self.absorbedDamage_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.cause_ = args.get("cause")
-        self.damage_ = args.get("damage")
-        self.damage_f_ = args.get("damage_f")
-        self.absorbedDamage_ = args.get("absorbedDamage")
+        self.entityId_ = args["entityId"]
+        self.cause_ = args["cause"]
+        self.damage_ = args["damage"]
+        self.damage_f_ = args["damage_f"]
+        self.absorbedDamage_ = args["absorbedDamage"]

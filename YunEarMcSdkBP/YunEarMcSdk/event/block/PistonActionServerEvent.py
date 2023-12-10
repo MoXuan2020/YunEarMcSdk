@@ -20,14 +20,14 @@ class PistonActionServerEvent(ServerEvent):
         self.entityList_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.action_ = args.get("action")
-        self.pistonFacing_ = args.get("pistonFacing")
-        self.pistonMoveFacing_ = args.get("pistonMoveFacing")
-        self.dimensionId_ = args.get("dimensionId")
-        self.pistonX_ = args.get("pistonX")
-        self.pistonY_ = args.get("pistonY")
-        self.pistonZ_ = args.get("pistonZ")
-        self.blockList_ = args.get("blockList")
-        self.breakBlockList_ = args.get("breakBlockList")
-        self.entityList_ = args.get("entityList")
+        self.cancel_ = args["cancel"]
+        self.action_ = args["action"]
+        self.pistonFacing_ = args["pistonFacing"]
+        self.pistonMoveFacing_ = args["pistonMoveFacing"]
+        self.dimensionId_ = args["dimensionId"]
+        self.pistonX_ = args["pistonX"]
+        self.pistonY_ = args["pistonY"]
+        self.pistonZ_ = args["pistonZ"]
+        self.blockList_ = args["blockList"]
+        self.breakBlockList_ = args["breakBlockList"]
+        self.entityList_ = args["entityList"]

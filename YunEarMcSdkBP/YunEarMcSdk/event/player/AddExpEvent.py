@@ -11,5 +11,5 @@ class AddExpEvent(ServerEvent):
         self.addExp_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.addExp_ = args.get("addExp")
+        self.id_ = args["id"]
+        self.addExp_ = args["addExp"]

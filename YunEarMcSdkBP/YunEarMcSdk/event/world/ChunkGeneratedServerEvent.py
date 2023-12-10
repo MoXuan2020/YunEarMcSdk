@@ -11,5 +11,5 @@ class ChunkGeneratedServerEvent(ServerEvent):
         self.blockEntityData_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension_ = args.get("dimension")
-        self.blockEntityData_ = args.get("blockEntityData")
+        self.dimension_ = args["dimension"]
+        self.blockEntityData_ = args["blockEntityData"]

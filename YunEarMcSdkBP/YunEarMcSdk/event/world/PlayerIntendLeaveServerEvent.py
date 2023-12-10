@@ -10,4 +10,4 @@ class PlayerIntendLeaveServerEvent(ServerEvent):
         self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
+        self.playerId_ = args["playerId"]

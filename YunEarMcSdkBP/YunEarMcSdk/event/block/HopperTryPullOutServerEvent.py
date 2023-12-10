@@ -17,11 +17,11 @@ class HopperTryPullOutServerEvent(ServerEvent):
         self.canHopper_ = None
 
     def CreateFromArgs(self, args):
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.attachedPosX_ = args.get("attachedPosX")
-        self.attachedPosY_ = args.get("attachedPosY")
-        self.attachedPosZ_ = args.get("attachedPosZ")
-        self.dimensionId_ = args.get("dimensionId")
-        self.canHopper_ = args.get("canHopper")
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.attachedPosX_ = args["attachedPosX"]
+        self.attachedPosY_ = args["attachedPosY"]
+        self.attachedPosZ_ = args["attachedPosZ"]
+        self.dimensionId_ = args["dimensionId"]
+        self.canHopper_ = args["canHopper"]

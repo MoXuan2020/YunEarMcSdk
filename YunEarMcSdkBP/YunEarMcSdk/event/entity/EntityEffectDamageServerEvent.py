@@ -15,9 +15,9 @@ class EntityEffectDamageServerEvent(ServerEvent):
         self.isInstantaneous_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.damage_ = args.get("damage")
-        self.attributeBuffType_ = args.get("attributeBuffType")
-        self.duration_ = args.get("duration")
-        self.lifeTimer_ = args.get("lifeTimer")
-        self.isInstantaneous_ = args.get("isInstantaneous")
+        self.entityId_ = args["entityId"]
+        self.damage_ = args["damage"]
+        self.attributeBuffType_ = args["attributeBuffType"]
+        self.duration_ = args["duration"]
+        self.lifeTimer_ = args["lifeTimer"]
+        self.isInstantaneous_ = args["isInstantaneous"]

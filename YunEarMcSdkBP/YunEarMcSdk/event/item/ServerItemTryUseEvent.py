@@ -12,6 +12,6 @@ class ServerItemTryUseEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]
+        self.cancel_ = args["cancel"]

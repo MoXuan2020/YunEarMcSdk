@@ -18,12 +18,12 @@ class DimensionChangeServerEvent(ServerEvent):
         self.toZ_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.fromDimensionId_ = args.get("fromDimensionId")
-        self.toDimensionId_ = args.get("toDimensionId")
-        self.fromX_ = args.get("fromX")
-        self.fromY_ = args.get("fromY")
-        self.fromZ_ = args.get("fromZ")
-        self.toX_ = args.get("toX")
-        self.toY_ = args.get("toY")
-        self.toZ_ = args.get("toZ")
+        self.playerId_ = args["playerId"]
+        self.fromDimensionId_ = args["fromDimensionId"]
+        self.toDimensionId_ = args["toDimensionId"]
+        self.fromX_ = args["fromX"]
+        self.fromY_ = args["fromY"]
+        self.fromZ_ = args["fromZ"]
+        self.toX_ = args["toX"]
+        self.toY_ = args["toY"]
+        self.toZ_ = args["toZ"]

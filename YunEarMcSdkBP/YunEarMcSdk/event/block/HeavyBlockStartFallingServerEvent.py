@@ -15,9 +15,9 @@ class HeavyBlockStartFallingServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId_ = args.get("fallingBlockId")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.blockName_ = args.get("blockName")
-        self.dimensionId_ = args.get("dimensionId")
+        self.fallingBlockId_ = args["fallingBlockId"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.blockName_ = args["blockName"]
+        self.dimensionId_ = args["dimensionId"]

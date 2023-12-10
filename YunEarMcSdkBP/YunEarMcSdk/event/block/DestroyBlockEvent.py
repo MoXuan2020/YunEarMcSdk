@@ -17,11 +17,11 @@ class DestroyBlockEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.face_ = args.get("face")
-        self.fullName_ = args.get("fullName")
-        self.auxData_ = args.get("auxData")
-        self.playerId_ = args.get("playerId")
-        self.dimensionId_ = args.get("dimensionId")
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.face_ = args["face"]
+        self.fullName_ = args["fullName"]
+        self.auxData_ = args["auxData"]
+        self.playerId_ = args["playerId"]
+        self.dimensionId_ = args["dimensionId"]

@@ -13,7 +13,7 @@ class PlayerInteractServerEvent(ServerEvent):
         self.victimId_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
-        self.victimId_ = args.get("victimId")
+        self.cancel_ = args["cancel"]
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]
+        self.victimId_ = args["victimId"]

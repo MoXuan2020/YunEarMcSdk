@@ -20,14 +20,14 @@ class ServerChatEvent(ServerEvent):
         self.gameChatPrefixColorB_ = None
 
     def CreateFromArgs(self, args):
-        self.username_ = args.get("username")
-        self.playerId_ = args.get("playerId")
-        self.message_ = args.get("message")
-        self.cancel_ = args.get("cancel")
-        self.bChatById_ = args.get("bChatById")
-        self.bForbid_ = args.get("bForbid")
-        self.toPlayerIds_ = args.get("toPlayerIds")
-        self.gameChatPrefix_ = args.get("gameChatPrefix")
-        self.gameChatPrefixColorR_ = args.get("gameChatPrefixColorR")
-        self.gameChatPrefixColorG_ = args.get("gameChatPrefixColorG")
-        self.gameChatPrefixColorB_ = args.get("gameChatPrefixColorB")
+        self.username_ = args["username"]
+        self.playerId_ = args["playerId"]
+        self.message_ = args["message"]
+        self.cancel_ = args["cancel"]
+        self.bChatById_ = args["bChatById"]
+        self.bForbid_ = args["bForbid"]
+        self.toPlayerIds_ = args["toPlayerIds"]
+        self.gameChatPrefix_ = args["gameChatPrefix"]
+        self.gameChatPrefixColorR_ = args["gameChatPrefixColorR"]
+        self.gameChatPrefixColorG_ = args["gameChatPrefixColorG"]
+        self.gameChatPrefixColorB_ = args["gameChatPrefixColorB"]

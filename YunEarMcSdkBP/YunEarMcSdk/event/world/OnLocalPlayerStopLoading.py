@@ -10,4 +10,4 @@ class OnLocalPlayerStopLoading(ClientEvent):
         self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
+        self.playerId_ = args["playerId"]

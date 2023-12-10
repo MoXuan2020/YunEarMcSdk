@@ -13,7 +13,7 @@ class PlayerSpinAttackServerEvent(ServerEvent):
         self.isStart_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.isInWaterOrRain_ = args.get("isInWaterOrRain")
-        self.isRiding_ = args.get("isRiding")
-        self.isStart_ = args.get("isStart")
+        self.playerId_ = args["playerId"]
+        self.isInWaterOrRain_ = args["isInWaterOrRain"]
+        self.isRiding_ = args["isRiding"]
+        self.isStart_ = args["isStart"]

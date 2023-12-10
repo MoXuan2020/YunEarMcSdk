@@ -11,5 +11,5 @@ class ItemUseAfterServerEvent(ServerEvent):
         self.itemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.itemDict_ = args.get("itemDict")
+        self.entityId_ = args["entityId"]
+        self.itemDict_ = args["itemDict"]

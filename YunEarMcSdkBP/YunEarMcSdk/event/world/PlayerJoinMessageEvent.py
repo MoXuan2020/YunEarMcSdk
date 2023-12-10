@@ -13,7 +13,7 @@ class PlayerJoinMessageEvent(ServerEvent):
         self.message_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.name_ = args.get("name")
-        self.cancel_ = args.get("cancel")
-        self.message_ = args.get("message")
+        self.id_ = args["id"]
+        self.name_ = args["name"]
+        self.cancel_ = args["cancel"]
+        self.message_ = args["message"]

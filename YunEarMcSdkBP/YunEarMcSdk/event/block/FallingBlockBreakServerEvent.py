@@ -17,11 +17,11 @@ class FallingBlockBreakServerEvent(ServerEvent):
         self.cancelDrop_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId_ = args.get("fallingBlockId")
-        self.fallingBlockX_ = args.get("fallingBlockX")
-        self.fallingBlockY_ = args.get("fallingBlockY")
-        self.fallingBlockZ_ = args.get("fallingBlockZ")
-        self.blockName_ = args.get("blockName")
-        self.fallTickAmount_ = args.get("fallTickAmount")
-        self.dimensionId_ = args.get("dimensionId")
-        self.cancelDrop_ = args.get("cancelDrop")
+        self.fallingBlockId_ = args["fallingBlockId"]
+        self.fallingBlockX_ = args["fallingBlockX"]
+        self.fallingBlockY_ = args["fallingBlockY"]
+        self.fallingBlockZ_ = args["fallingBlockZ"]
+        self.blockName_ = args["blockName"]
+        self.fallTickAmount_ = args["fallTickAmount"]
+        self.dimensionId_ = args["dimensionId"]
+        self.cancelDrop_ = args["cancelDrop"]

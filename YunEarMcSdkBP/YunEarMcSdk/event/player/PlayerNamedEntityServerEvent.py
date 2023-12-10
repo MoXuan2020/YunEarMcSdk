@@ -14,8 +14,8 @@ class PlayerNamedEntityServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.entityId_ = args.get("entityId")
-        self.preName_ = args.get("preName")
-        self.afterName_ = args.get("afterName")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.entityId_ = args["entityId"]
+        self.preName_ = args["preName"]
+        self.afterName_ = args["afterName"]
+        self.cancel_ = args["cancel"]

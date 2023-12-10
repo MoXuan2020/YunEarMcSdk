@@ -16,10 +16,10 @@ class BlockLiquidStateChangeServerEvent(ServerEvent):
         self.turnLiquid_ = None
 
     def CreateFromArgs(self, args):
-        self.blockName_ = args.get("blockName")
-        self.auxValue_ = args.get("auxValue")
-        self.dimension_ = args.get("dimension")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.turnLiquid_ = args.get("turnLiquid")
+        self.blockName_ = args["blockName"]
+        self.auxValue_ = args["auxValue"]
+        self.dimension_ = args["dimension"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.turnLiquid_ = args["turnLiquid"]

@@ -13,7 +13,7 @@ class CraftItemOutputChangeServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
-        self.screenContainerType_ = args.get("screenContainerType")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]
+        self.screenContainerType_ = args["screenContainerType"]
+        self.cancel_ = args["cancel"]

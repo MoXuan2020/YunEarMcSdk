@@ -10,4 +10,4 @@ class ClientJumpButtonPressDownEvent(ClientEvent):
         self.continueJump_ = None
 
     def CreateFromArgs(self, args):
-        self.continueJump_ = args.get("continueJump")
+        self.continueJump_ = args["continueJump"]

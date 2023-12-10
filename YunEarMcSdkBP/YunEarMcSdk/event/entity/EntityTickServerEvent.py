@@ -11,5 +11,5 @@ class EntityTickServerEvent(ServerEvent):
         self.identifier_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.identifier_ = args.get("identifier")
+        self.entityId_ = args["entityId"]
+        self.identifier_ = args["identifier"]

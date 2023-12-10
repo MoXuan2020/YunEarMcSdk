@@ -17,11 +17,11 @@ class FallingBlockReturnHeavyBlockServerEvent(ServerEvent):
         self.fallTickAmount_ = None
 
     def CreateFromArgs(self, args):
-        self.fallingBlockId_ = args.get("fallingBlockId")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.heavyBlockName_ = args.get("heavyBlockName")
-        self.prevHereBlockName_ = args.get("prevHereBlockName")
-        self.dimensionId_ = args.get("dimensionId")
-        self.fallTickAmount_ = args.get("fallTickAmount")
+        self.fallingBlockId_ = args["fallingBlockId"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.heavyBlockName_ = args["heavyBlockName"]
+        self.prevHereBlockName_ = args["prevHereBlockName"]
+        self.dimensionId_ = args["dimensionId"]
+        self.fallTickAmount_ = args["fallTickAmount"]

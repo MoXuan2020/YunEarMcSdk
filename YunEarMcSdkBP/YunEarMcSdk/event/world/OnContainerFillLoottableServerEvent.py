@@ -13,7 +13,7 @@ class OnContainerFillLoottableServerEvent(ServerEvent):
         self.dirty_ = None
 
     def CreateFromArgs(self, args):
-        self.loottable_ = args.get("loottable")
-        self.playerId_ = args.get("playerId")
-        self.itemList_ = args.get("itemList")
-        self.dirty_ = args.get("dirty")
+        self.loottable_ = args["loottable"]
+        self.playerId_ = args["playerId"]
+        self.itemList_ = args["itemList"]
+        self.dirty_ = args["dirty"]

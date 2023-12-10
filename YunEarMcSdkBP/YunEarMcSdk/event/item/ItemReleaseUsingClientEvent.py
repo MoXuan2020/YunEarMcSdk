@@ -14,8 +14,8 @@ class ItemReleaseUsingClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.durationLeft_ = args.get("durationLeft")
-        self.itemDict_ = args.get("itemDict")
-        self.maxUseDuration_ = args.get("maxUseDuration")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.durationLeft_ = args["durationLeft"]
+        self.itemDict_ = args["itemDict"]
+        self.maxUseDuration_ = args["maxUseDuration"]
+        self.cancel_ = args["cancel"]

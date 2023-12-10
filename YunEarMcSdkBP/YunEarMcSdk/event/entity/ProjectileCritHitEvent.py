@@ -11,5 +11,5 @@ class ProjectileCritHitEvent(ServerEvent):
         self.targetId_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.targetId_ = args.get("targetId")
+        self.id_ = args["id"]
+        self.targetId_ = args["targetId"]

@@ -11,5 +11,5 @@ class EntityDefinitionsEventServerEvent(ServerEvent):
         self.eventName_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.eventName_ = args.get("eventName")
+        self.entityId_ = args["entityId"]
+        self.eventName_ = args["eventName"]

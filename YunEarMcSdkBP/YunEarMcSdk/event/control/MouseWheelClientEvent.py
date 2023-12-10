@@ -10,4 +10,4 @@ class MouseWheelClientEvent(ClientEvent):
         self.direction_ = None
 
     def CreateFromArgs(self, args):
-        self.direction_ = args.get("direction")
+        self.direction_ = args["direction"]

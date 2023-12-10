@@ -13,7 +13,7 @@ class UIContainerItemChangedServerEvent(ServerEvent):
         self.newItemDict_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.slot_ = args.get("slot")
-        self.oldItemDict_ = args.get("oldItemDict")
-        self.newItemDict_ = args.get("newItemDict")
+        self.playerId_ = args["playerId"]
+        self.slot_ = args["slot"]
+        self.oldItemDict_ = args["oldItemDict"]
+        self.newItemDict_ = args["newItemDict"]

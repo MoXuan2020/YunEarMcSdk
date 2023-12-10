@@ -11,5 +11,5 @@ class PlayerInventoryOpenScriptServerEvent(ServerEvent):
         self.isCreative_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.isCreative_ = args.get("isCreative")
+        self.playerId_ = args["playerId"]
+        self.isCreative_ = args["isCreative"]

@@ -19,13 +19,13 @@ class ShearsUseToBlockBeforeServerEvent(ServerEvent):
         self.cancelShears_ = None
 
     def CreateFromArgs(self, args):
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.blockName_ = args.get("blockName")
-        self.auxData_ = args.get("auxData")
-        self.dropName_ = args.get("dropName")
-        self.dropCount_ = args.get("dropCount")
-        self.entityId_ = args.get("entityId")
-        self.dimensionId_ = args.get("dimensionId")
-        self.cancelShears_ = args.get("cancelShears")
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.blockName_ = args["blockName"]
+        self.auxData_ = args["auxData"]
+        self.dropName_ = args["dropName"]
+        self.dropCount_ = args["dropCount"]
+        self.entityId_ = args["entityId"]
+        self.dimensionId_ = args["dimensionId"]
+        self.cancelShears_ = args["cancelShears"]

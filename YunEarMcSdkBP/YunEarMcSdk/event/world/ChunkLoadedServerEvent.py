@@ -13,7 +13,7 @@ class ChunkLoadedServerEvent(ServerEvent):
         self.blockEntities_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension_ = args.get("dimension")
-        self.chunkPosX_ = args.get("chunkPosX")
-        self.chunkPosZ_ = args.get("chunkPosZ")
-        self.blockEntities_ = args.get("blockEntities")
+        self.dimension_ = args["dimension"]
+        self.chunkPosX_ = args["chunkPosX"]
+        self.chunkPosZ_ = args["chunkPosZ"]
+        self.blockEntities_ = args["blockEntities"]

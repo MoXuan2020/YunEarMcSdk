@@ -12,6 +12,6 @@ class ActorUseItemServerEvent(ServerEvent):
         self.useMethod_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
-        self.useMethod_ = args.get("useMethod")
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]
+        self.useMethod_ = args["useMethod"]

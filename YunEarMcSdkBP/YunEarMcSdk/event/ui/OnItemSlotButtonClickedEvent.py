@@ -10,4 +10,4 @@ class OnItemSlotButtonClickedEvent(ClientEvent):
         self.slotIndex_ = None
 
     def CreateFromArgs(self, args):
-        self.slotIndex_ = args.get("slotIndex")
+        self.slotIndex_ = args["slotIndex"]

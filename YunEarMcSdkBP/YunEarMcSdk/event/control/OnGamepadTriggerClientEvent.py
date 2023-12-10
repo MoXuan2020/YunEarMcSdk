@@ -11,5 +11,5 @@ class OnGamepadTriggerClientEvent(ClientEvent):
         self.magnitude_ = None
 
     def CreateFromArgs(self, args):
-        self.key_ = args.get("key")
-        self.magnitude_ = args.get("magnitude")
+        self.key_ = args["key"]
+        self.magnitude_ = args["magnitude"]

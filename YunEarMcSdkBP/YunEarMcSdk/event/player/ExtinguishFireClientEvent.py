@@ -12,6 +12,6 @@ class ExtinguishFireClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.pos_ = args.get("pos")
-        self.playerId_ = args.get("playerId")
-        self.cancel_ = args.get("cancel")
+        self.pos_ = args["pos"]
+        self.playerId_ = args["playerId"]
+        self.cancel_ = args["cancel"]

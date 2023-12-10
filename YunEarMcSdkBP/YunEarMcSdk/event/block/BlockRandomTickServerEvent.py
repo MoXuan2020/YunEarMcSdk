@@ -16,10 +16,10 @@ class BlockRandomTickServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.blockName_ = args.get("blockName")
-        self.fullName_ = args.get("fullName")
-        self.auxValue_ = args.get("auxValue")
-        self.dimensionId_ = args.get("dimensionId")
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.blockName_ = args["blockName"]
+        self.fullName_ = args["fullName"]
+        self.auxValue_ = args["auxValue"]
+        self.dimensionId_ = args["dimensionId"]

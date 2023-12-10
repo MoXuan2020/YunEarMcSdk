@@ -12,6 +12,6 @@ class OnGamepadKeyPressClientEvent(ClientEvent):
         self.isDown_ = None
 
     def CreateFromArgs(self, args):
-        self.screenName_ = args.get("screenName")
-        self.key_ = args.get("key")
-        self.isDown_ = args.get("isDown")
+        self.screenName_ = args["screenName"]
+        self.key_ = args["key"]
+        self.isDown_ = args["isDown"]

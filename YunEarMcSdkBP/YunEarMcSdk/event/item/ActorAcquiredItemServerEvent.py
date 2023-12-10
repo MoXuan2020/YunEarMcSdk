@@ -13,7 +13,7 @@ class ActorAcquiredItemServerEvent(ServerEvent):
         self.acquireMethod_ = None
 
     def CreateFromArgs(self, args):
-        self.actor_ = args.get("actor")
-        self.secondaryActor_ = args.get("secondaryActor")
-        self.itemDict_ = args.get("itemDict")
-        self.acquireMethod_ = args.get("acquireMethod")
+        self.actor_ = args["actor"]
+        self.secondaryActor_ = args["secondaryActor"]
+        self.itemDict_ = args["itemDict"]
+        self.acquireMethod_ = args["acquireMethod"]

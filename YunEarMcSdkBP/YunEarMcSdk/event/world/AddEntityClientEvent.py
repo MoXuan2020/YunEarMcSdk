@@ -18,12 +18,12 @@ class AddEntityClientEvent(ClientEvent):
         self.auxValue_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.dimensionId_ = args.get("dimensionId")
-        self.isBaby_ = args.get("isBaby")
-        self.engineTypeStr_ = args.get("engineTypeStr")
-        self.itemName_ = args.get("itemName")
-        self.auxValue_ = args.get("auxValue")
+        self.id_ = args["id"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.dimensionId_ = args["dimensionId"]
+        self.isBaby_ = args["isBaby"]
+        self.engineTypeStr_ = args["engineTypeStr"]
+        self.itemName_ = args["itemName"]
+        self.auxValue_ = args["auxValue"]

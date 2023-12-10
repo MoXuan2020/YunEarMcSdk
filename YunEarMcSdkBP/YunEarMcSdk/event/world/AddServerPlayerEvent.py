@@ -16,10 +16,10 @@ class AddServerPlayerEvent(ServerEvent):
         self.proxyId_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.isTransfer_ = args.get("isTransfer")
-        self.isReconnect_ = args.get("isReconnect")
-        self.isPeUser_ = args.get("isPeUser")
-        self.transferParam_ = args.get("transferParam")
-        self.uid_ = args.get("uid")
-        self.proxyId_ = args.get("proxyId")
+        self.id_ = args["id"]
+        self.isTransfer_ = args["isTransfer"]
+        self.isReconnect_ = args["isReconnect"]
+        self.isPeUser_ = args["isPeUser"]
+        self.transferParam_ = args["transferParam"]
+        self.uid_ = args["uid"]
+        self.proxyId_ = args["proxyId"]

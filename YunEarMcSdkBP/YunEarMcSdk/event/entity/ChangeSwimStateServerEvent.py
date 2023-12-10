@@ -12,6 +12,6 @@ class ChangeSwimStateServerEvent(ServerEvent):
         self.toState_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.formState_ = args.get("formState")
-        self.toState_ = args.get("toState")
+        self.entityId_ = args["entityId"]
+        self.formState_ = args["formState"]
+        self.toState_ = args["toState"]

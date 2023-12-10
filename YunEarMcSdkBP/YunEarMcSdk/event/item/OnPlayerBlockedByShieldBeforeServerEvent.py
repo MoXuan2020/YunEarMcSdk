@@ -13,7 +13,7 @@ class OnPlayerBlockedByShieldBeforeServerEvent(ServerEvent):
         self.damage_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.sourceId_ = args.get("sourceId")
-        self.itemDict_ = args.get("itemDict")
-        self.damage_ = args.get("damage")
+        self.playerId_ = args["playerId"]
+        self.sourceId_ = args["sourceId"]
+        self.itemDict_ = args["itemDict"]
+        self.damage_ = args["damage"]

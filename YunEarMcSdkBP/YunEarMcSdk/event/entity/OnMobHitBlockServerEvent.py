@@ -16,10 +16,10 @@ class OnMobHitBlockServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
-        self.blockId_ = args.get("blockId")
-        self.auxValue_ = args.get("auxValue")
-        self.dimensionId_ = args.get("dimensionId")
+        self.entityId_ = args["entityId"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]
+        self.blockId_ = args["blockId"]
+        self.auxValue_ = args["auxValue"]
+        self.dimensionId_ = args["dimensionId"]

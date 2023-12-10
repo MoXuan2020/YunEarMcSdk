@@ -11,5 +11,5 @@ class OnCommandOutputClientEvent(ClientEvent):
         self.message_ = None
 
     def CreateFromArgs(self, args):
-        self.command_ = args.get("command")
-        self.message_ = args.get("message")
+        self.command_ = args["command"]
+        self.message_ = args["message"]

@@ -12,6 +12,6 @@ class OnOffhandItemChangedServerEvent(ServerEvent):
         self.playerId_ = None
 
     def CreateFromArgs(self, args):
-        self.oldItemDict_ = args.get("oldItemDict")
-        self.newItemDict_ = args.get("newItemDict")
-        self.playerId_ = args.get("playerId")
+        self.oldItemDict_ = args["oldItemDict"]
+        self.newItemDict_ = args["newItemDict"]
+        self.playerId_ = args["playerId"]

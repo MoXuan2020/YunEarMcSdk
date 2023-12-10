@@ -17,11 +17,11 @@ class PlaceNeteaseStructureFeatureEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.structureName_ = args.get("structureName")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.biomeType_ = args.get("biomeType")
-        self.biomeName_ = args.get("biomeName")
-        self.dimensionId_ = args.get("dimensionId")
-        self.cancel_ = args.get("cancel")
+        self.structureName_ = args["structureName"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.biomeType_ = args["biomeType"]
+        self.biomeName_ = args["biomeName"]
+        self.dimensionId_ = args["dimensionId"]
+        self.cancel_ = args["cancel"]

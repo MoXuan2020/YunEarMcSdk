@@ -10,4 +10,4 @@ class CameraMotionStartClientEvent(ClientEvent):
         self.motionId_ = None
 
     def CreateFromArgs(self, args):
-        self.motionId_ = args.get("motionId")
+        self.motionId_ = args["motionId"]

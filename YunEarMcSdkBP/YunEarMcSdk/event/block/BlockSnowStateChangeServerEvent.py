@@ -15,9 +15,9 @@ class BlockSnowStateChangeServerEvent(ServerEvent):
         self.setBlockType_ = None
 
     def CreateFromArgs(self, args):
-        self.dimension_ = args.get("dimension")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.turnSnow_ = args.get("turnSnow")
-        self.setBlockType_ = args.get("setBlockType")
+        self.dimension_ = args["dimension"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.turnSnow_ = args["turnSnow"]
+        self.setBlockType_ = args["setBlockType"]

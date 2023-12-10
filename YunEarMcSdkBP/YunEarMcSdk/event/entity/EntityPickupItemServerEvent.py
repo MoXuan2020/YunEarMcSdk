@@ -12,6 +12,6 @@ class EntityPickupItemServerEvent(ServerEvent):
         self.secondaryActor_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.itemDict_ = args.get("itemDict")
-        self.secondaryActor_ = args.get("secondaryActor")
+        self.entityId_ = args["entityId"]
+        self.itemDict_ = args["itemDict"]
+        self.secondaryActor_ = args["secondaryActor"]

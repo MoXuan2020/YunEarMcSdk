@@ -14,8 +14,8 @@ class ServerPlaceBlockEntityEvent(ServerEvent):
         self.posZ_ = None
 
     def CreateFromArgs(self, args):
-        self.blockName_ = args.get("blockName")
-        self.dimension_ = args.get("dimension")
-        self.posX_ = args.get("posX")
-        self.posY_ = args.get("posY")
-        self.posZ_ = args.get("posZ")
+        self.blockName_ = args["blockName"]
+        self.dimension_ = args["dimension"]
+        self.posX_ = args["posX"]
+        self.posY_ = args["posY"]
+        self.posZ_ = args["posZ"]

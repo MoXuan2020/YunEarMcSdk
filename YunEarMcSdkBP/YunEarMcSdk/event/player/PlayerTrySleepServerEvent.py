@@ -11,5 +11,5 @@ class PlayerTrySleepServerEvent(ServerEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.cancel_ = args.get("cancel")
+        self.playerId_ = args["playerId"]
+        self.cancel_ = args["cancel"]

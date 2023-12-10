@@ -15,9 +15,9 @@ class PlayerAttackEntityEvent(ServerEvent):
         self.isKnockBack_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.victimId_ = args.get("victimId")
-        self.damage_ = args.get("damage")
-        self.isValid_ = args.get("isValid")
-        self.cancel_ = args.get("cancel")
-        self.isKnockBack_ = args.get("isKnockBack")
+        self.playerId_ = args["playerId"]
+        self.victimId_ = args["victimId"]
+        self.damage_ = args["damage"]
+        self.isValid_ = args["isValid"]
+        self.cancel_ = args["cancel"]
+        self.isKnockBack_ = args["isKnockBack"]

@@ -17,11 +17,11 @@ class ChestBlockTryPairWithServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.otherBlockX_ = args.get("otherBlockX")
-        self.otherBlockY_ = args.get("otherBlockY")
-        self.otherBlockZ_ = args.get("otherBlockZ")
-        self.dimensionId_ = args.get("dimensionId")
+        self.cancel_ = args["cancel"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.otherBlockX_ = args["otherBlockX"]
+        self.otherBlockY_ = args["otherBlockY"]
+        self.otherBlockZ_ = args["otherBlockZ"]
+        self.dimensionId_ = args["dimensionId"]

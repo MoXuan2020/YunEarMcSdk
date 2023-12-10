@@ -13,7 +13,7 @@ class ClientChestOpenEvent(ClientEvent):
         self.z_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
+        self.playerId_ = args["playerId"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]

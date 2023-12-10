@@ -11,5 +11,5 @@ class EntityStartRidingEvent(ServerEvent):
         self.rideId_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.rideId_ = args.get("rideId")
+        self.id_ = args["id"]
+        self.rideId_ = args["rideId"]

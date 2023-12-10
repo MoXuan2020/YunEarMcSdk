@@ -20,14 +20,14 @@ class WillTeleportToServerEvent(ServerEvent):
         self.cause_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.entityId_ = args.get("entityId")
-        self.fromDimensionId_ = args.get("fromDimensionId")
-        self.toDimensionId_ = args.get("toDimensionId")
-        self.fromX_ = args.get("fromX")
-        self.fromY_ = args.get("fromY")
-        self.fromZ_ = args.get("fromZ")
-        self.toX_ = args.get("toX")
-        self.toY_ = args.get("toY")
-        self.toZ_ = args.get("toZ")
-        self.cause_ = args.get("cause")
+        self.cancel_ = args["cancel"]
+        self.entityId_ = args["entityId"]
+        self.fromDimensionId_ = args["fromDimensionId"]
+        self.toDimensionId_ = args["toDimensionId"]
+        self.fromX_ = args["fromX"]
+        self.fromY_ = args["fromY"]
+        self.fromZ_ = args["fromZ"]
+        self.toX_ = args["toX"]
+        self.toY_ = args["toY"]
+        self.toZ_ = args["toZ"]
+        self.cause_ = args["cause"]

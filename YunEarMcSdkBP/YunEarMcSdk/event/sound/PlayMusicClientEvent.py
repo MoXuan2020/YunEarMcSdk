@@ -11,5 +11,5 @@ class PlayMusicClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.name_ = args.get("name")
-        self.cancel_ = args.get("cancel")
+        self.name_ = args["name"]
+        self.cancel_ = args["cancel"]

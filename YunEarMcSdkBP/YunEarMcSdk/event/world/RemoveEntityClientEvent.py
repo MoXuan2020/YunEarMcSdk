@@ -10,4 +10,4 @@ class RemoveEntityClientEvent(ClientEvent):
         self.id_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
+        self.id_ = args["id"]

@@ -11,5 +11,5 @@ class ApproachEntityClientEvent(ClientEvent):
         self.entityId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.entityId_ = args.get("entityId")
+        self.playerId_ = args["playerId"]
+        self.entityId_ = args["entityId"]

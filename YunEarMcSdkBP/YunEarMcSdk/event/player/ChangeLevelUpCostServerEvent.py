@@ -12,6 +12,6 @@ class ChangeLevelUpCostServerEvent(ServerEvent):
         self.changed_ = None
 
     def CreateFromArgs(self, args):
-        self.level_ = args.get("level")
-        self.levelUpCostExp_ = args.get("levelUpCostExp")
-        self.changed_ = args.get("changed")
+        self.level_ = args["level"]
+        self.levelUpCostExp_ = args["levelUpCostExp"]
+        self.changed_ = args["changed"]

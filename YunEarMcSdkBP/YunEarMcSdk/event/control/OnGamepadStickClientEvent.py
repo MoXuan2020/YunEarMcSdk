@@ -12,6 +12,6 @@ class OnGamepadStickClientEvent(ClientEvent):
         self.y_ = None
 
     def CreateFromArgs(self, args):
-        self.key_ = args.get("key")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
+        self.key_ = args["key"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]

@@ -13,7 +13,7 @@ class PlayerEatFoodServerEvent(ServerEvent):
         self.nutrition_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.itemDict_ = args.get("itemDict")
-        self.hunger_ = args.get("hunger")
-        self.nutrition_ = args.get("nutrition")
+        self.playerId_ = args["playerId"]
+        self.itemDict_ = args["itemDict"]
+        self.hunger_ = args["hunger"]
+        self.nutrition_ = args["nutrition"]

@@ -19,13 +19,13 @@ class ServerBlockUseEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.playerId_ = args.get("playerId")
-        self.blockName_ = args.get("blockName")
-        self.aux_ = args.get("aux")
-        self.cancel_ = args.get("cancel")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.face_ = args.get("face")
-        self.itemDict_ = args.get("itemDict")
-        self.dimensionId_ = args.get("dimensionId")
+        self.playerId_ = args["playerId"]
+        self.blockName_ = args["blockName"]
+        self.aux_ = args["aux"]
+        self.cancel_ = args["cancel"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.face_ = args["face"]
+        self.itemDict_ = args["itemDict"]
+        self.dimensionId_ = args["dimensionId"]

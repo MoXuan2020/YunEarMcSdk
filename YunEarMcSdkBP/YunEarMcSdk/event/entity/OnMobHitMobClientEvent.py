@@ -11,5 +11,5 @@ class OnMobHitMobClientEvent(ClientEvent):
         self.hittedMobList_ = None
 
     def CreateFromArgs(self, args):
-        self.mobId_ = args.get("mobId")
-        self.hittedMobList_ = args.get("hittedMobList")
+        self.mobId_ = args["mobId"]
+        self.hittedMobList_ = args["hittedMobList"]

@@ -11,5 +11,5 @@ class ClientPlayerInventoryOpenEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.isCreative_ = args.get("isCreative")
-        self.cancel_ = args.get("cancel")
+        self.isCreative_ = args["isCreative"]
+        self.cancel_ = args["cancel"]

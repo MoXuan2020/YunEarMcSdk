@@ -19,13 +19,13 @@ class OnEntityInsideBlockClientEvent(ClientEvent):
         self.cancel_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.dimensionId_ = args.get("dimensionId")
-        self.slowdownMultiX_ = args.get("slowdownMultiX")
-        self.slowdownMultiY_ = args.get("slowdownMultiY")
-        self.slowdownMultiZ_ = args.get("slowdownMultiZ")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.blockName_ = args.get("blockName")
-        self.cancel_ = args.get("cancel")
+        self.entityId_ = args["entityId"]
+        self.dimensionId_ = args["dimensionId"]
+        self.slowdownMultiX_ = args["slowdownMultiX"]
+        self.slowdownMultiY_ = args["slowdownMultiY"]
+        self.slowdownMultiZ_ = args["slowdownMultiZ"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.blockName_ = args["blockName"]
+        self.cancel_ = args["cancel"]

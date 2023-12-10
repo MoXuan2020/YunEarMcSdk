@@ -12,6 +12,6 @@ class AddLevelEvent(ServerEvent):
         self.newLevel_ = None
 
     def CreateFromArgs(self, args):
-        self.id_ = args.get("id")
-        self.addLevel_ = args.get("addLevel")
-        self.newLevel_ = args.get("newLevel")
+        self.id_ = args["id"]
+        self.addLevel_ = args["addLevel"]
+        self.newLevel_ = args["newLevel"]

@@ -21,15 +21,15 @@ class ClientItemUseOnEvent(ClientEvent):
         self.ret_ = None
 
     def CreateFromArgs(self, args):
-        self.entityId_ = args.get("entityId")
-        self.itemDict_ = args.get("itemDict")
-        self.x_ = args.get("x")
-        self.y_ = args.get("y")
-        self.z_ = args.get("z")
-        self.blockName_ = args.get("blockName")
-        self.blockAuxValue_ = args.get("blockAuxValue")
-        self.face_ = args.get("face")
-        self.clickX_ = args.get("clickX")
-        self.clickY_ = args.get("clickY")
-        self.clickZ_ = args.get("clickZ")
-        self.ret_ = args.get("ret")
+        self.entityId_ = args["entityId"]
+        self.itemDict_ = args["itemDict"]
+        self.x_ = args["x"]
+        self.y_ = args["y"]
+        self.z_ = args["z"]
+        self.blockName_ = args["blockName"]
+        self.blockAuxValue_ = args["blockAuxValue"]
+        self.face_ = args["face"]
+        self.clickX_ = args["clickX"]
+        self.clickY_ = args["clickY"]
+        self.clickZ_ = args["clickZ"]
+        self.ret_ = args["ret"]

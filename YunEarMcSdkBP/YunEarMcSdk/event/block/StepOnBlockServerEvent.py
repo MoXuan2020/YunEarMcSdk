@@ -16,10 +16,10 @@ class StepOnBlockServerEvent(ServerEvent):
         self.dimensionId_ = None
 
     def CreateFromArgs(self, args):
-        self.cancel_ = args.get("cancel")
-        self.blockX_ = args.get("blockX")
-        self.blockY_ = args.get("blockY")
-        self.blockZ_ = args.get("blockZ")
-        self.entityId_ = args.get("entityId")
-        self.blockName_ = args.get("blockName")
-        self.dimensionId_ = args.get("dimensionId")
+        self.cancel_ = args["cancel"]
+        self.blockX_ = args["blockX"]
+        self.blockY_ = args["blockY"]
+        self.blockZ_ = args["blockZ"]
+        self.entityId_ = args["entityId"]
+        self.blockName_ = args["blockName"]
+        self.dimensionId_ = args["dimensionId"]

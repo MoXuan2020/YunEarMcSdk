@@ -10,4 +10,4 @@ class EntityLoadScriptEvent(ServerEvent):
         self.args_ = None
 
     def CreateFromArgs(self, args):
-        self.args_ = args.get("args")
+        self.args_ = args["args"]

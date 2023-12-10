@@ -10,4 +10,4 @@ class OnMusicStopClientEvent(ClientEvent):
         self.musicName_ = None
 
     def CreateFromArgs(self, args):
-        self.musicName_ = args.get("musicName")
+        self.musicName_ = args["musicName"]
