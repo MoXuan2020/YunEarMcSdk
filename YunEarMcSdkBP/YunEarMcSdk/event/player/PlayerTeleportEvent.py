@@ -4,4 +4,10 @@ from YunEarMcSdk.event.ServerEvent import ServerEvent
 
 
 class PlayerTeleportEvent(ServerEvent):
-    pass
+
+    def __init__(self, callback):
+        super(PlayerTeleportEvent, self).__init__(callback)
+        self.id = None
+
+    def CreateFromArgs(self, args):
+        self.id = args.get("id")

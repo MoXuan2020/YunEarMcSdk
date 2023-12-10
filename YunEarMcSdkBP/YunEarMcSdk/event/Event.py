@@ -7,8 +7,12 @@ class Event(object):
         self.callback = callback
         self.mod = None
 
+    def __call__(self, args):
+        self.CreateFromArgs(args)
+        self.callback(self.mod, self)
+
     def BindMod(self, mod):
         self.mod = mod
 
-    def __call__(self, args):
-        self.callback(self.mod, args)
+    def CreateFromArgs(self, args):
+        pass

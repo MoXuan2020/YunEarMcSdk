@@ -4,4 +4,10 @@ from YunEarMcSdk.event.ClientEvent import ClientEvent
 
 
 class RemovePlayerAOIClientEvent(ClientEvent):
-    pass
+
+    def __init__(self, callback):
+        super(RemovePlayerAOIClientEvent, self).__init__(callback)
+        self.playerId = None
+
+    def CreateFromArgs(self, args):
+        self.playerId = args.get("playerId")

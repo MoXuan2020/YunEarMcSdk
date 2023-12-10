@@ -4,4 +4,12 @@ from YunEarMcSdk.event.ServerEvent import ServerEvent
 
 
 class lobbyGoodBuySucServerEvent(ServerEvent):
-    pass
+
+    def __init__(self, callback):
+        super(lobbyGoodBuySucServerEvent, self).__init__(callback)
+        self.eid = None
+        self.buyItem = None
+
+    def CreateFromArgs(self, args):
+        self.eid = args.get("eid")
+        self.buyItem = args.get("buyItem")

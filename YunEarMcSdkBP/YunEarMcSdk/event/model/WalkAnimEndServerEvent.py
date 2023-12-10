@@ -4,4 +4,10 @@ from YunEarMcSdk.event.ServerEvent import ServerEvent
 
 
 class WalkAnimEndServerEvent(ServerEvent):
-    pass
+
+    def __init__(self, callback):
+        super(WalkAnimEndServerEvent, self).__init__(callback)
+        self.id = None
+
+    def CreateFromArgs(self, args):
+        self.id = args.get("id")

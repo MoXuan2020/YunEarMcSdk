@@ -4,4 +4,16 @@ from YunEarMcSdk.event.ServerEvent import ServerEvent
 
 
 class GrassBlockToDirtBlockServerEvent(ServerEvent):
-    pass
+
+    def __init__(self, callback):
+        super(GrassBlockToDirtBlockServerEvent, self).__init__(callback)
+        self.dimension = None
+        self.x = None
+        self.y = None
+        self.z = None
+
+    def CreateFromArgs(self, args):
+        self.dimension = args.get("dimension")
+        self.x = args.get("x")
+        self.y = args.get("y")
+        self.z = args.get("z")

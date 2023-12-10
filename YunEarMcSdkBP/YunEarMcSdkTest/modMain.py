@@ -8,5 +8,5 @@ from YunEarMcSdk.sdk.Sdk import YunEarMcSdk
 class YunEarMcSdkTest(object):
 
     @AddEntityServerEvent
-    def AddEntityServerEvent(self, args):
-        print args
+    def AddEntityServerEvent(self, event):
+        print event
