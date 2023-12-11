@@ -11,7 +11,9 @@ class Event(object):
         self.CreateFromArgs(args)
         self.callback(self.mod, self)
         for key in args:
-            args[key] = self.__dict__[key + "_"]
+            attr = key + "_"
+            if attr in self.__dict__:
+                args[key] = self.__dict__[attr]
 
     def BindMod(self, mod):
         self.mod = mod

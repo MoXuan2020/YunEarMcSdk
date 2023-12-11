@@ -1,0 +1,9 @@
+{
+  "namespace": "mob_editor",
+  "mob_editor_screen@common.base_screen": {
+    "$screen_content": "mob_editor.mob_editor_content"
+  },
+  "mob_editor_content": {
+    "type": "panel"
+  }
+}

@@ -16,7 +16,6 @@ class AddEntityClientEvent(ClientEvent):
         self.engineTypeStr_ = None
         self.itemName_ = None
         self.auxValue_ = None
-        self.identifier_ = None
 
     def CreateFromArgs(self, args):
         self.id_ = args["id"]
@@ -28,4 +27,3 @@ class AddEntityClientEvent(ClientEvent):
         self.engineTypeStr_ = args["engineTypeStr"]
         self.itemName_ = args.get("itemName")
         self.auxValue_ = args.get("auxValue")
-        self.identifier_ = args["identifier"]
