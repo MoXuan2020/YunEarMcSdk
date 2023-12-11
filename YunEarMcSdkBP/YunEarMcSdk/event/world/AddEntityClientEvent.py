@@ -25,5 +25,5 @@ class AddEntityClientEvent(ClientEvent):
         self.dimensionId_ = args["dimensionId"]
         self.isBaby_ = args["isBaby"]
         self.engineTypeStr_ = args["engineTypeStr"]
-        self.itemName_ = args["itemName"]
-        self.auxValue_ = args["auxValue"]
+        self.itemName_ = args.get("itemName")
+        self.auxValue_ = args.get("auxValue")
