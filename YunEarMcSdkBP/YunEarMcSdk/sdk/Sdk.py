@@ -22,13 +22,13 @@ class YunEarMcSdk(object):
         if self.mod is None:
             self.mod = self.modCls()
             self.server = serverApi.GetSystem(
-                Config.SdkName,
-                Config.SdkServerName
+                self.modCls.__module__,
+                self.modCls.__name__
             )
             if self.server is None:
                 self.server = serverApi.RegisterSystem(
-                    Config.SdkName,
-                    Config.SdkServerName,
+                    self.modCls.__module__,
+                    self.modCls.__name__,
                     Config.SdkServerClsPath
                 )
                 for attr in self.modCls.__dict__:
@@ -43,8 +43,8 @@ class YunEarMcSdk(object):
                             event.callback
                         )
             self.client = clientApi.RegisterSystem(
-                Config.SdkName,
-                Config.SdkClientName,
+                self.modCls.__module__,
+                self.modCls.__name__,
                 Config.SdkClientClsPath
             )
             for attr in self.modCls.__dict__:
