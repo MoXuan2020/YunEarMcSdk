@@ -49,11 +49,11 @@ class Player(Entity):
     def GetPlayerCurLevelExp(self, playerId):
         return self.CreateGame().GetPlayerCurLevelExp(playerId)
 
-    def GetPlayerExp(self, isPercent=True):
+    def GetPlayerExp(self, playerId=None, isPercent=True):
         if isinstance(self.event, ServerEvent):
             return self.CreateExp().GetPlayerExp(isPercent)
         if isinstance(self.event, ClientEvent):
-            return self.CreateGame().GetPlayerExp(self.id, isPercent)
+            return self.CreateGame().GetPlayerExp(playerId, isPercent)
 
     def GetPlayerHealthLevel(self):
         return self.CreatePlayer().GetPlayerHealthLevel()
@@ -76,11 +76,11 @@ class Player(Entity):
     def GetPlayerStarveTick(self):
         return self.CreatePlayer().GetPlayerStarveTick()
 
-    def GetPlayerTotalExp(self):
+    def GetPlayerTotalExp(self, playerId=None):
         if isinstance(self.event, ServerEvent):
             return self.CreateExp().GetPlayerTotalExp()
         if isinstance(self.event, ClientEvent):
-            return self.CreateGame().GetPlayerTotalExp(self.id)
+            return self.CreateGame().GetPlayerTotalExp(playerId)
 
     def IsPlayerNaturalRegen(self):
         return self.CreatePlayer().IsPlayerNaturalRegen()

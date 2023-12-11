@@ -169,11 +169,11 @@ class Entity(object):
     def GetBodyRot(self):
         return self.CreateRot().GetBodyRot()
 
-    def GetCurrentAirSupply(self):
+    def GetCurrentAirSupply(self, entityId=None):
         if isinstance(self.event, ServerEvent):
             return self.CreateBreath().GetCurrentAirSupply()
         if isinstance(self.event, ClientEvent):
-            return self.CreateGame().GetCurrentAirSupply(self.id)
+            return self.CreateGame().GetCurrentAirSupply(entityId)
 
     def GetDeathTime(self):
         return self.CreateEntityDefinitions().GetDeathTime()
@@ -202,11 +202,11 @@ class Entity(object):
     def GetMarkVariant(self):
         return self.CreateEntityDefinitions().GetMarkVariant()
 
-    def GetMaxAirSupply(self):
+    def GetMaxAirSupply(self, entityId=None):
         if isinstance(self.event, ServerEvent):
             return self.CreateBreath().GetMaxAirSupply()
         if isinstance(self.event, ClientEvent):
-            return self.CreateGame().GetMaxAirSupply(self.id)
+            return self.CreateGame().GetMaxAirSupply(entityId)
 
     def GetMobColor(self):
         return self.CreateEntityDefinitions().GetMobColor()
