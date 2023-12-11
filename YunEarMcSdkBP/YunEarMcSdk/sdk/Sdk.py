@@ -9,7 +9,7 @@ from YunEarMcSdk.event.ClientEvent import ClientEvent
 from YunEarMcSdk.event.ServerEvent import ServerEvent
 
 
-@Mod.Binding(Config.SdkName, Config.SdkVersion)
+@Mod.Binding(Config.SdkName)
 class YunEarMcSdk(object):
 
     def __init__(self, modCls=None):
