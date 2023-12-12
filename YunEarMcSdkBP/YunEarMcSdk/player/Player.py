@@ -31,6 +31,12 @@ class Player(Entity):
     def CreatePlayerAnim(self):
         return self.GetEngineCompFactory().CreatePlayerAnim(self.id)
 
+    def CreateOperation(self):
+        return self.GetEngineCompFactory().CreateOperation(self.GetSystemApi().GetLevelId())
+
+    def CreateDevice(self):
+        return self.GetEngineCompFactory().CreateDevice(self.GetSystemApi().GetLevelId())
+
     def AddPlayerExperience(self, exp):
         return self.CreateExp().AddPlayerExperience(exp)
 
@@ -631,3 +637,93 @@ class Player(Entity):
 
     def StopNav(self):
         return self.GetSystemApi().StopNav()
+
+    def AddPickBlacklist(self, entityId):
+        return self.CreateGame().AddPickBlacklist(entityId)
+
+    def ClearPickBlacklist(self):
+        return self.CreateGame().ClearPickBlacklist()
+
+    def GetChosen(self):
+        return self.CreateCamera().GetChosen()
+
+    def GetChosenEntity(self):
+        return self.CreateCamera().GetChosenEntity()
+
+    def GetHoldTimeThresholdInMs(self):
+        return self.CreateOperation().GetHoldTimeThresholdInMs()
+
+    def GetInputVector(self):
+        return self.CreateActorMotion().GetInputVector()
+
+    def GetMousePosition(self):
+        return self.CreateActorMotion().GetMousePosition()
+
+    def GetTouchPos(self):
+        return self.GetSystemApi().GetTouchPos()
+
+    def LockInputVector(self, inputVector):
+        return self.CreateActorMotion().LockInputVector(inputVector)
+
+    def LockVerticalMove(self, flag):
+        return self.CreateActorMotion().LockVerticalMove(flag)
+
+    def PickFacing(self):
+        return self.CreateCamera().PickFacing()
+
+    def SetCanAll(self, all):
+        return self.CreateOperation().SetCanAll(all)
+
+    def SetCanAttack(self, attack):
+        return self.CreateOperation().SetCanAttack(attack)
+
+    def SetCanChat(self, chat):
+        return self.CreateOperation().SetCanChat(chat)
+
+    def SetCanDrag(self, drag):
+        return self.CreateOperation().SetCanDrag(drag)
+
+    def SetCanInair(self, inair):
+        return self.CreateOperation().SetCanInair(inair)
+
+    def SetCanJump(self, jump):
+        return self.CreateOperation().SetCanJump(jump)
+
+    def SetCanMove(self, move):
+        return self.CreateOperation().SetCanMove(move)
+
+    def SetCanOpenInv(self, open):
+        return self.CreateOperation().SetCanOpenInv(open)
+
+    def SetCanPause(self, pause):
+        return self.CreateOperation().SetCanPause(pause)
+
+    def SetCanPerspective(self, persp):
+        return self.CreateOperation().SetCanPerspective(persp)
+
+    def SetCanScreenShot(self, shot):
+        return self.CreateOperation().SetCanScreenShot(shot)
+
+    def SetCanWalkMode(self, walkmode):
+        return self.CreateOperation().SetCanWalkMode(walkmode)
+
+    def SetDeviceVibrate(self, milliSeconds):
+        return self.CreateDevice().SetDeviceVibrate(milliSeconds)
+
+    def SetHoldTimeThreshold(self, time):
+        return self.CreateOperation().SetHoldTimeThreshold(time)
+
+    def SetMoveLock(self, movelock):
+        return self.CreateOperation().SetMoveLock(movelock)
+
+    def SetShowRideUI(self, tamedEntityId, isShowUI):
+        return self.CreateRide().SetShowRideUI(tamedEntityId, isShowUI)
+
+    def SimulateTouchWithMouse(self, touch):
+        return self.CreateGame().SimulateTouchWithMouse(touch)
+
+    def UnLockVerticalMove(self):
+        return self.CreateActorMotion().UnLockVerticalMove()
+
+    def UnlockInputVector(self):
+        return self.CreateActorMotion().UnlockInputVector()

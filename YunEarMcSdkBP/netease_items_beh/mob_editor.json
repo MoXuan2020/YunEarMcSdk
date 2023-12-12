@@ -1,9 +1,0 @@
-{
-  "format_version": "1.10.0",
-  "minecraft:item": {
-    "description": {
-      "identifier": "yunear:mob_editor",
-      "register_to_create_menu": true
-    }
-  }
-}

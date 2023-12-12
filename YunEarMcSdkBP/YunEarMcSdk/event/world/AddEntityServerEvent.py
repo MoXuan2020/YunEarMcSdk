@@ -25,5 +25,7 @@ class AddEntityServerEvent(ServerEvent):
         self.dimensionId_ = args["dimensionId"]
         self.isBaby_ = args["isBaby"]
         self.engineTypeStr_ = args["engineTypeStr"]
-        self.itemName_ = args.get("itemName")
-        self.auxValue_ = args.get("auxValue")
+        if "itemName" in args:
+            self.itemName_ = args["itemName"]
+        if "auxValue" in args:
+            self.auxValue_ = args["auxValue"]
